@@ -1,0 +1,691 @@
+,Scenario Name,Category,Tools,expected_tool_calls,Task Graph,gold_standard_response,codes
+0,How to Do Exercises for Temporomandibular Joint Disorder (TMD) Treatment,['Health'],"['Practice jaw pulls.', 'Practice resisted mouth opening.', 'Practice resisted mouth closing.', 'Move your jaw side to side.', 'Practice forward jaw movement.']","[['practice_jaw_pulls', 'practice_resisted_mouth_opening', 'practice_resisted_mouth_closing', 'move_jaw_side_to_side', 'practice_forward_jaw_movement']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Practice jaw pulls.'}, {'id': 3, 'label': 'Practice resisted mouth opening.'}, {'id': 4, 'label': 'Practice resisted mouth closing.'}, {'id': 5, 'label': 'Move your jaw side to side.'}, {'id': 6, 'label': 'Practice forward jaw movement.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}]}}","['To perform exercises for Temporomandibular Joint Disorder (TMD) treatment, follow these steps: 1. Perform jaw pulls by placing your thumb under your chin and gently pulling your jaw downward. Hold for 5 seconds and repeat 10 times. 2. Place your thumb under your chin and open your mouth slowly while applying gentle resistance with your thumb. Hold for 5 seconds and repeat 10 times. 3. Place your thumb under your chin and close your mouth slowly while applying gentle resistance with your thumb. Hold for 5 seconds and repeat 10 times. 4. Move your jaw to the left and hold for 5 seconds, then move it to the right and hold for 5 seconds. Repeat 10 times on each side. 5. Push your jaw forward and hold for 5 seconds. Repeat 10 times.']","def practice_forward_jaw_movement(input_1, input_2):
+    """"""
+    Simulates practicing forward jaw movement for TMD treatment.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Push your jaw forward and hold for 5 seconds. Repeat 10 times.""
+"
+1,How to Take Care of Your Skin With Natural Methods,['Health'],"['Apply tea tree oil to blemishes to reduce inflammation.', 'Use onion extract gel once a day to minimize scars.', 'Reduce wrinkles with a vitamin C serum.', 'Minimize excess oil with a witch hazel lotion or toner.', 'Treat dry or itchy skin with an oatmeal bath.']","[['apply_tea_tree_oil', 'use_onion_extract_gel', 'reduce_wrinkles_with_vitamin_c_serum', 'minimize_excess_oil_with_witch_hazel', 'treat_dry_skin_with_oatmeal_bath']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Apply tea tree oil to blemishes to reduce inflammation.'}, {'id': 3, 'label': 'Use onion extract gel once a day to minimize scars.'}, {'id': 4, 'label': 'Reduce wrinkles with a vitamin C serum.'}, {'id': 5, 'label': 'Minimize excess oil with a witch hazel lotion or toner.'}, {'id': 6, 'label': 'Treat dry or itchy skin with an oatmeal bath.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}]}}","['To take care of your skin with natural methods, you can apply tea tree oil to blemishes to reduce inflammation by 30%, use onion extract gel once a day to minimize scars by 20%, reduce wrinkles with a vitamin C serum by 25%, minimize excess oil with a witch hazel lotion or toner by 35%, and treat dry or itchy skin with an oatmeal bath, which can relieve symptoms by 40%.']","def treat_dry_skin_with_oatmeal_bath(input_1, input_2):
+    """"""
+    Mimics the treatment of dry or itchy skin with an oatmeal bath.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Oatmeal bath taken. Dry and itchy skin relieved by 40%.""
+"
+2,How to Cut Wood Using Various Power Tools,['Home and Garden'],"['Use a jigsaw.', 'Use a circular saw.', 'Use a mitre saw.', 'Use a reciprocating saw.', 'Use a door trimming saw.']","[['use_jigsaw', 'use_circular_saw', 'use_mitre_saw', 'use_reciprocating_saw', 'use_door_trimming_saw']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Use a jigsaw.'}, {'id': 3, 'label': 'Use a circular saw.'}, {'id': 4, 'label': 'Use a mitre saw.'}, {'id': 5, 'label': 'Use a reciprocating saw.'}, {'id': 6, 'label': 'Use a door trimming saw.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}]}}","['To cut wood using various power tools, you can follow these steps: Using a jigsaw, the wood was cut with precision along the marked curved line, resulting in a smooth and accurate cut. Using a circular saw, the wood was cut straight along the grain, producing a clean and precise edge. Using a mitre saw, the wood was cut at a perfect 45-degree angle, ideal for creating precise joints. Using a reciprocating saw, the wood was cut quickly and roughly, suitable for demolition work. Using a door trimming saw, the bottom of the door was trimmed evenly to fit over the new carpet.']","def use_door_trimming_saw(input_1, input_2):
+    """"""
+    Simulates the use of a door trimming saw to cut wood.
+
+    Args:
+        input_1(str): Description of the door or trim type.
+        input_2 (bool): Whether the cut is for fitting or resizing.
+
+    Returns:
+        str: A detailed description of the door trimming saw cutting process and result.
+    """"""
+    return ""Using a door trimming saw, the bottom of the door was trimmed evenly to fit over the new carpet.""
+"
+3,How to Recognize a Fake Ralph Lauren,['Others'],"['Check the logo.', 'Examine the stitching.', 'Look at the collar label.', 'Examine the buttons.', 'Check the hem.', 'Read the care label.']","[['check_logo', 'examine_stitching', 'look_at_collar_label', 'examine_buttons', 'check_hem', 'read_care_label']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Check the logo.'}, {'id': 3, 'label': 'Examine the stitching.'}, {'id': 4, 'label': 'Look at the collar label.'}, {'id': 5, 'label': 'Examine the buttons.'}, {'id': 6, 'label': 'Check the hem.'}, {'id': 7, 'label': 'Read the care label.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}]}}","['To recognize a fake Ralph Lauren, check the logo for fine, even stitching and clear details. Examine the stitching throughout the garment for consistency. Look at the collar label for clear printing and no spelling errors. Examine the buttons for high-quality materials and possible engravings. Check the hem for neat finishing and straight stitching. Finally, read the care label for clear washing instructions and the country of manufacture.']","def read_care_label(input_1, input_2):
+    """"""
+    Detailed description of the what the function does
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""The care label should provide clear washing instructions and include the country of manufacture. It should be securely attached and free of spelling errors.""
+"
+4,How to Recognize Hints That a Girl Likes You,['Education and Communication'],"['Note social media interactions.', 'Look for frequent text messages.', 'Pay attention to communication at night.', 'Watch for emojis.']","[['note_social_media_interactions', 'look_for_frequent_text_messages', 'pay_attention_to_communication_at_night', 'watch_for_emojis']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Note social media interactions.'}, {'id': 3, 'label': 'Look for frequent text messages.'}, {'id': 4, 'label': 'Pay attention to communication at night.'}, {'id': 5, 'label': 'Watch for emojis.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}]}}","['To recognize hints that a girl likes you, observe her social media interactions, noting likes, comments, and mentions. Look for frequent text messages, especially during the evening. Pay attention to communication at night, including messages and calls. Watch for the use of emojis, particularly those that convey positive emotions.']","def use_cinnamon_in_drinks(input_1, input_2):
+    """"""
+    Mimics the functionality of using cinnamon in drink recipes.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A realistic example of a drink recipe with cinnamon.
+    """"""
+    return 'Recipe: Stir 1/4 teaspoon of cinnamon into your hot chocolate for a cozy and warming drink.'
+"
+5,How to Use Cinnamon to Help With Diabetes,['Health'],"['Use cinnamon to replace sugar.', 'Add cinnamon to your breakfast.', 'Use cinnamon in meat sauces.', 'Replace sugar in vegetable dishes.', 'Use cinnamon in baking.', 'Add cinnamon to sweet and savory canning recipes.', 'Use cinnamon in drinks.']","[['replace_sugar_with_cinnamon', 'add_cinnamon_to_breakfast', 'use_cinnamon_in_meat_sauces', 'replace_sugar_in_vegetable_dishes', 'use_cinnamon_in_baking', 'add_cinnamon_to_canning_recipes', 'use_cinnamon_in_drinks']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Use cinnamon to replace sugar.'}, {'id': 3, 'label': 'Add cinnamon to your breakfast.'}, {'id': 4, 'label': 'Use cinnamon in meat sauces.'}, {'id': 5, 'label': 'Replace sugar in vegetable dishes.'}, {'id': 6, 'label': 'Use cinnamon in baking.'}, {'id': 7, 'label': 'Add cinnamon to sweet and savory canning recipes.'}, {'id': 8, 'label': 'Use cinnamon in drinks.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 0, 'to': 8}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}, {'from': 8, 'to': 1}]}}","['To help with diabetes, you can use cinnamon in various ways: replace sugar with cinnamon in your oatmeal, add cinnamon to your yogurt and granola for breakfast, use cinnamon in your beef stew, replace sugar with cinnamon in roasted carrots, add cinnamon to your banana bread batter, include cinnamon in your apple butter canning recipe, and stir cinnamon into your hot chocolate.']","def use_oxalic_acid_for_tough_stains(input_1, input_2):
+    """"""
+    Use oxalic acid for tough stains.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Dissolve oxalic acid in water according to the instructions, apply to the stain, let it sit for a few minutes, then scrub and rinse.""
+"
+6,How to Clean a Fiberglass Shower Floor,['Home and Garden'],"['Treat tough soap scum with baking soda.', 'Use vinegar to remove stubborn grime.', 'Remove tough stains with hydrogen peroxide.', 'Try removing mildew stains with bleach.', 'Use oxalic acid for tough stains.']","[['treat_soap_scum_with_baking_soda', 'use_vinegar_to_remove_grime', 'remove_stains_with_hydrogen_peroxide', 'remove_mildew_stains_with_bleach', 'use_oxalic_acid_for_tough_stains']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Treat tough soap scum with baking soda.'}, {'id': 3, 'label': 'Use vinegar to remove stubborn grime.'}, {'id': 4, 'label': 'Remove tough stains with hydrogen peroxide.'}, {'id': 5, 'label': 'Try removing mildew stains with bleach.'}, {'id': 6, 'label': 'Use oxalic acid for tough stains.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}]}}","['To clean a fiberglass shower floor, you can follow these steps: 1. Apply a paste of baking soda and water to any soap scum, let it sit for 15 minutes, then scrub with a brush. 2. For stubborn grime, spray undiluted white vinegar, let it sit for 10 minutes, then wipe clean with a damp cloth. 3. For tough stains, apply hydrogen peroxide directly, let it sit for 5 minutes, then scrub with a brush and rinse. 4. For mildew stains, mix one part bleach with three parts water, apply to the stains, let it sit for 10 minutes, then scrub and rinse thoroughly. 5. For other tough stains, dissolve oxalic acid in water according to the instructions, apply to the stain, let it sit for a few minutes, then scrub and rinse.']","def look_for_signs_of_kidney_disease(input_1, input_2):
+    """"""
+    Mimics the process of looking for signs of kidney disease in a cat.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A string describing common signs of kidney disease in cats.
+    """"""
+    return ""Common signs of kidney disease in cats include increased thirst, frequent urination, weight loss, and poor coat condition.""
+"
+7,How to Watch for Common Senior Cat Health Issues,['Health'],"['Look for signs of arthritis.', 'Observe your cat’s eating habits and check its teeth.', 'Check your cat’s eyes regularly.', 'Watch for signs of hyperthyroidism.', 'Look for signs of kidney disease.']","[['look_for_signs_of_arthritis', 'observe_eating_habits_and_check_teeth', 'check_cats_eyes_regularly', 'watch_for_signs_of_hyperthyroidism', 'look_for_signs_of_kidney_disease']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Look for signs of arthritis.'}, {'id': 3, 'label': 'Observe your cat’s eating habits and check its teeth.'}, {'id': 4, 'label': 'Check your cat’s eyes regularly.'}, {'id': 5, 'label': 'Watch for signs of hyperthyroidism.'}, {'id': 6, 'label': 'Look for signs of kidney disease.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}]}}","[""To watch for common senior cat health issues, look for signs of arthritis such as limping and stiffness. Observe your cat's eating habits and check its teeth for dental disease. Regularly check your cat's eyes for cloudiness or redness. Watch for signs of hyperthyroidism like weight loss and increased appetite. Finally, look for signs of kidney disease such as increased thirst and frequent urination.""]","def identify_tail(input_1, input_2):
+    """"""
+    Detailed description of what the function does
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""The tail of a Boeing 767 includes the vertical stabilizer (fin) and horizontal stabilizer (tailplane), which provide stability and control in flight.""
+"
+8,How to Identify a Boeing 767,['Others'],"['Identify the fuselage.', 'Identify the wings.', 'Identify the winglets.', 'Identify the landing gear.', 'Identify the engines.', 'Identify the tail.']","[['identify_fuselage', 'identify_wings', 'identify_winglets', 'identify_landing_gear', 'identify_engines', 'identify_tail']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Identify the fuselage.'}, {'id': 3, 'label': 'Identify the wings.'}, {'id': 4, 'label': 'Identify the winglets.'}, {'id': 5, 'label': 'Identify the landing gear.'}, {'id': 6, 'label': 'Identify the engines.'}, {'id': 7, 'label': 'Identify the tail.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}]}}","['To identify a Boeing 767, look for the following features: The fuselage is a wide-body structure housing the cockpit, passenger cabin, and cargo hold. The wings are large, swept-back, and mounted low on the fuselage with a slight upward angle. The winglets are small, vertical extensions at the tips of the wings. The landing gear consists of a tricycle arrangement with two main units under the wings and a nose gear unit under the cockpit. The engines are typically two high-bypass turbofan engines mounted under the wings. The tail includes the vertical stabilizer and horizontal stabilizer, providing stability and control.']","def stick_brooch_to_skirt(input_1, input_2):
+    """"""
+    Stick your brooch to the waist of a skirt for an unexpected touch.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Stick your brooch to the waist of a skirt for an unexpected and chic touch.""
+"
+9,How to Wear a Brooch,['Fashion and Style'],"['Pin your brooch to the breast of a blouse for a classic look.', 'Use a brooch to emphasize the collar of a shirt.', 'Wear a brooch to add sparkle to a simple dress.', 'Pin your brooch to a cozy sweater to mix style and comfort.', 'Add personality to a jacket or blazer by pinning a brooch to the lapel.', 'Jazz up a simple T-shirt with a brooch.', 'Stick your brooch to the waist of a skirt for an unexpected touch.']","[['pin_brooch_to_blouse', 'emphasize_collar_with_brooch', 'add_sparkle_to_dress', 'pin_brooch_to_sweater', 'add_personality_to_jacket', 'jazz_up_tshirt_with_brooch', 'stick_brooch_to_skirt']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Pin your brooch to the breast of a blouse for a classic look.'}, {'id': 3, 'label': 'Use a brooch to emphasize the collar of a shirt.'}, {'id': 4, 'label': 'Wear a brooch to add sparkle to a simple dress.'}, {'id': 5, 'label': 'Pin your brooch to a cozy sweater to mix style and comfort.'}, {'id': 6, 'label': 'Add personality to a jacket or blazer by pinning a brooch to the lapel.'}, {'id': 7, 'label': 'Jazz up a simple T-shirt with a brooch.'}, {'id': 8, 'label': 'Stick your brooch to the waist of a skirt for an unexpected touch.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 0, 'to': 8}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}, {'from': 8, 'to': 1}]}}","['To wear a brooch, you can pin it to the breast of a blouse for a classic look, use it to emphasize the collar of a shirt, add sparkle to a simple dress, pin it to a cozy sweater to mix style and comfort, add personality to a jacket or blazer by pinning it to the lapel, jazz up a simple T-shirt with it, or stick it to the waist of a skirt for an unexpected touch.']","def pour_corn_gluten_meal(input_1, input_2):
+    """"""
+    Mimics the pouring of corn-gluten meal into the compost.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Confirmation message indicating corn-gluten meal has been poured.
+    """"""
+    return 'Corn-gluten meal has been poured into the compost.'
+"
+10,How to Add Nitrogen to Compost,['Home and Garden'],"['Add fresh grass clippings to the compost.', 'Add leafy plant clippings to the compost.', 'Add chicken droppings.', 'Add aged manure to increase the nitrogen in your compost.', 'Incorporate blood or bone meal into your compost.', 'Pour corn-gluten meal into the compost.']","[['add_fresh_grass_clippings', 'add_leafy_plant_clippings', 'add_chicken_droppings', 'add_aged_manure', 'incorporate_blood_or_bone_meal', 'pour_corn_gluten_meal']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Add fresh grass clippings to the compost.'}, {'id': 3, 'label': 'Add leafy plant clippings to the compost.'}, {'id': 4, 'label': 'Add chicken droppings.'}, {'id': 5, 'label': 'Add aged manure to increase the nitrogen in your compost.'}, {'id': 6, 'label': 'Incorporate blood or bone meal into your compost.'}, {'id': 7, 'label': 'Pour corn-gluten meal into the compost.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}]}}","['To add nitrogen to your compost, you can add aged manure, chicken droppings, or incorporate blood or bone meal.']","def explain_castling(input_1, input_2):
+    """"""
+    Detailed description of what the function does
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Castling is a special move involving the king and either rook. The king moves two squares towards the rook, and the rook moves to the square next to the king. This move can only be done if neither piece has moved before, there are no pieces between them, and the king is not in check.""
+"
+11,How to Teach Children Chess,['Education and Communication'],"['Explain pawn promotion.', 'Explain en passant.', 'Explain what the term ""castling"" means.']","[['explain_pawn_promotion', 'explain_en_passant', 'explain_castling']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Explain pawn promotion.'}, {'id': 3, 'label': 'Explain en passant.'}, {'id': 4, 'label': 'Explain what the term ""castling"" means.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}]}}","['To teach children chess, start by explaining the basic moves and rules. For example, explain that pawn promotion occurs when a pawn reaches the opposite end of the board and can be converted into another piece, usually a queen. Teach them about en passant, a special pawn capture that can occur under specific conditions. Finally, explain castling, a special move involving the king and rook that helps protect the king and develop the rook.']","def make_good_tomato_feed(input_1, input_2):
+    """"""
+    Provides instructions on how to make a good tomato feed.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Mix one tablespoon of Epsom salt with one gallon of water. Use this solution to water your tomato plants once a month. Epsom salt provides magnesium, which is essential for photosynthesis and helps tomato plants produce more fruit.""
+"
+12,How to Make Homemade Plant Fertilizer,['Home and Garden'],"['Use coffee grounds as a fertilizer.', 'Try using a seaweed fertilizer.', 'Make a banana fertilizer for your roses.', 'Make a good tomato feed.']","[['use_coffee_grounds_as_fertilizer', 'try_using_seaweed_fertilizer', 'make_banana_fertilizer_for_roses', 'make_good_tomato_feed']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Use coffee grounds as a fertilizer.'}, {'id': 3, 'label': 'Try using a seaweed fertilizer.'}, {'id': 4, 'label': 'Make a banana fertilizer for your roses.'}, {'id': 5, 'label': 'Make a good tomato feed.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}]}}","['To make homemade plant fertilizer, you can use coffee grounds, seaweed, banana peels, or Epsom salt. Sprinkle used coffee grounds around your plants for nitrogen, add rinsed and chopped seaweed to your soil for trace elements, bury chopped banana peels around rose bushes for potassium, and mix Epsom salt with water to feed your tomato plants with magnesium.']","def make_mosaic_artwork(input_1, input_2):
+    """"""
+    Use the bottle caps to make a mosaic artwork.
+
+    Args:
+        input_1(str): Description of the type of design to create.
+        input_2 (bool): Whether to use a specific type of bottle caps.
+
+    Returns:
+        str: A description of the mosaic artwork made from the bottle caps.
+    """"""
+    return ""Mosaic artwork made from colorful bottle caps, forming a floral design.""
+"
+13,How to Recycle Plastic Bottles,['Home and Garden'],"['Use the bottom of a 2 liter (0.53 US gal) soda bottle to stamp cherry blossom designs onto a large sheet of paper.', 'Make a Chia pet out of a 2 liter (0.53 US gal) bottle.', 'Turn several 2 liter (0.53 US gal) bottles into snack bowls.', 'Turn two plastic bottles into a zippered coin purse.', 'Make a greenhouse for a plant.', 'Turn a plastic bottle into a birdfeeder.', 'Use the bottle caps to make a mosaic artwork.']","[['stamp_cherry_blossom_designs', 'make_chia_pet', 'make_snack_bowls', 'make_coin_purse', 'make_greenhouse', 'make_birdfeeder', 'make_mosaic_artwork']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Use the bottom of a 2 liter (0.53 US gal) soda bottle to stamp cherry blossom designs onto a large sheet of paper.'}, {'id': 3, 'label': 'Make a Chia pet out of a 2 liter (0.53 US gal) bottle.'}, {'id': 4, 'label': 'Turn several 2 liter (0.53 US gal) bottles into snack bowls.'}, {'id': 5, 'label': 'Turn two plastic bottles into a zippered coin purse.'}, {'id': 6, 'label': 'Make a greenhouse for a plant.'}, {'id': 7, 'label': 'Turn a plastic bottle into a birdfeeder.'}, {'id': 8, 'label': 'Use the bottle caps to make a mosaic artwork.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 0, 'to': 8}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}, {'from': 8, 'to': 1}]}}","['To recycle plastic bottles, you can use them to stamp cherry blossom designs on paper, make a Chia pet, create snack bowls, turn them into a zippered coin purse, make a greenhouse for plants, create a birdfeeder, or use the bottle caps to make mosaic artwork.']","def put_guts_in_punch_bowl(input_1, input_2):
+    """"""
+    Mimics the action of putting the 'guts' in a punch bowl.
+
+    Args:
+        input_1(str): Description of the 'guts' to be placed in the punch bowl.
+        input_2 (bool): Indicator if the punch bowl is ready to receive the 'guts'.
+
+    Returns:
+        str: Confirmation message that 'guts' have been placed in the punch bowl.
+    """"""
+    return ""Guts have been placed in the punch bowl.""
+"
+14,How to Make a Monster Creator Food Table,['Food and Entertainment'],"['Place the bones in a separate bowl.', 'Do the same with cheesy fingers.', 'Place other items on platter.', 'Put the ""guts"" in a punch bowl.']","[['place_bones_in_bowl', 'handle_cheesy_fingers', 'place_items_on_platter', 'put_guts_in_punch_bowl']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Place the bones in a separate bowl.'}, {'id': 3, 'label': 'Do the same with cheesy fingers.'}, {'id': 4, 'label': 'Place other items on platter.'}, {'id': 5, 'label': 'Put the ""guts"" in a punch bowl.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}]}}","[""To make a Monster Creator Food Table, follow these steps: 1. Place the bones in a separate bowl. 2. Handle the cheesy fingers. 3. Place other items on the platter. 4. Put the 'guts' in a punch bowl.""]","def chihuahua_play_fetch(input_1, input_2):
+    """"""
+    Simulates getting a chihuahua to play fetch.
+
+    Args:
+        input_1(str): The name of the chihuahua.
+        input_2 (bool): Whether the chihuahua retrieves the thrown item.
+
+    Returns:
+        str: A description of the fetch game.
+    """"""
+    return ""You throw a small ball across the yard. Your chihuahua runs after it, picks it up, and brings it back to you, wagging its tail.""
+"
+15,How to Play with a Chihuahua,['Family Life'],"['Play hide and seek.', 'Teach your chihuahua to help clean up.', 'Have a tug-o-war with your chihuahua.', 'Get your chihuahua to play fetch.']","[['play_hide_and_seek', 'teach_chihuahua_to_clean', 'tug_o_war_with_chihuahua', 'chihuahua_play_fetch']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Play hide and seek.'}, {'id': 3, 'label': 'Teach your chihuahua to help clean up.'}, {'id': 4, 'label': 'Have a tug-o-war with your chihuahua.'}, {'id': 5, 'label': 'Get your chihuahua to play fetch.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}]}}","[""To play with your chihuahua, you can try several activities: play hide and seek by hiding and calling your chihuahua's name, teach your chihuahua to help clean up by showing it how to pick up toys and place them in a basket, have a tug-o-war game with a rope toy, or play fetch by throwing a small ball and having your chihuahua retrieve it.""]","def consume_fats_oils(input_1, input_2):
+    """"""
+    Mimics the recommendation to consume between 2 and 3 fats or oils daily.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A string indicating the recommended servings of fats or oils per day.
+    """"""
+    return '2 to 3 fats or oils daily'
+"
+16,How to Follow the DASH Diet,['Health'],"['Eat 7 to 8 servings of grains each day.', 'Consume 4 to 5 servings of fruit daily.', 'Eat 4 to 5 servings of vegetables every day.', 'Include 2 to 3 servings of low fat or nonfat dairy products in your daily diet.', 'Consume 6 or fewer servings of lean meats, fish, and poultry each day.', 'Eat 4 to 5 servings of nuts, seeds, and legumes each week.', 'Consume between 2 and 3 fats or oils daily.']","[['eat_grains', 'consume_fruit', 'eat_vegetables', 'include_dairy', 'consume_meats', 'eat_nuts_seeds_legumes', 'consume_fats_oils']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Eat 7 to 8 servings of grains each day.'}, {'id': 3, 'label': 'Consume 4 to 5 servings of fruit daily.'}, {'id': 4, 'label': 'Eat 4 to 5 servings of vegetables every day.'}, {'id': 5, 'label': 'Include 2 to 3 servings of low fat or nonfat dairy products in your daily diet.'}, {'id': 6, 'label': 'Consume 6 or fewer servings of lean meats, fish, and poultry each day.'}, {'id': 7, 'label': 'Eat 4 to 5 servings of nuts, seeds, and legumes each week.'}, {'id': 8, 'label': 'Consume between 2 and 3 fats or oils daily.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 0, 'to': 8}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}, {'from': 8, 'to': 1}]}}","['To follow the DASH diet, you should eat 7 to 8 servings of grains each day, consume 4 to 5 servings of fruit daily, eat 4 to 5 servings of vegetables every day, include 2 to 3 servings of low fat or nonfat dairy products in your daily diet, consume 6 or fewer servings of lean meats, fish, and poultry each day, eat 4 to 5 servings of nuts, seeds, and legumes each week, and consume between 2 and 3 fats or oils daily.']","def reduce_inflammation_and_swelling_with_arnica(input_1, input_2):
+    """"""
+    Use arnica to reduce the boil's inflammation and swelling.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return 'Arnica is effective in reducing inflammation and swelling, making it useful for treating boils.'
+"
+17,How to Treat Boils at Home,['Health'],"[""Reduce the boil's inflammation with witch hazel."", 'Kill the bacteria in the boil with tea tree oil.', ""Use arnica to reduce the boil's inflammation and swelling.""]","[['reduce_inflammation_with_witch_hazel', 'kill_bacteria_with_tea_tree_oil', 'reduce_inflammation_and_swelling_with_arnica']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': ""Reduce the boil's inflammation with witch hazel.""}, {'id': 3, 'label': 'Kill the bacteria in the boil with tea tree oil.'}, {'id': 4, 'label': ""Use arnica to reduce the boil's inflammation and swelling.""}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}]}}","['To treat boils at home, you can use witch hazel to reduce inflammation, tea tree oil to kill bacteria, and arnica to reduce both inflammation and swelling.']","def make_french_toast_cake_pops(input_1, input_2):
+    """"""
+    Detailed description of the what the function does
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Ingredients: 1 cup bread crumbs, 1/2 cup maple syrup, 1/2 cup cream cheese, 1/2 cup cake crumbs. Instructions: Mix all ingredients, form into balls, chill for 1 hour, and dip in melted white chocolate.""
+"
+18,How to Make Cake Pops,['Food and Entertainment'],"['Make coconut cream cake pops.', ""Make s'more cake pops."", 'Make blueberry muffin cake pops.', 'Make hot cocoa cake pops.', 'Make butterfinger cake pops.', 'Make apple cinnamon cake pops.', 'Make french toast cake pops.']","[['make_coconut_cream_cake_pops', 'make_smore_cake_pops', 'make_blueberry_muffin_cake_pops', 'make_hot_cocoa_cake_pops', 'make_butterfinger_cake_pops', 'make_apple_cinnamon_cake_pops', 'make_french_toast_cake_pops']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Make coconut cream cake pops.'}, {'id': 3, 'label': ""Make s'more cake pops.""}, {'id': 4, 'label': 'Make blueberry muffin cake pops.'}, {'id': 5, 'label': 'Make hot cocoa cake pops.'}, {'id': 6, 'label': 'Make butterfinger cake pops.'}, {'id': 7, 'label': 'Make apple cinnamon cake pops.'}, {'id': 8, 'label': 'Make french toast cake pops.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 0, 'to': 8}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}, {'from': 8, 'to': 1}]}}","[""To make cake pops, you can choose from a variety of flavors. Here are some options:\n1. Coconut Cream Cake Pops: Mix shredded coconut, coconut cream, powdered sugar, and cake crumbs. Form into balls, chill, and dip in melted white chocolate.\n2. S'more Cake Pops: Mix graham cracker crumbs, marshmallow fluff, chocolate chips, and cake crumbs. Form into balls, chill, and dip in melted chocolate.\n3. Blueberry Muffin Cake Pops: Mix fresh blueberries, cream cheese, powdered sugar, and muffin crumbs. Form into balls, chill, and dip in melted white chocolate.\n4. Hot Cocoa Cake Pops: Mix hot cocoa mix, mini marshmallows, chocolate chips, and cake crumbs. Form into balls, chill, and dip in melted chocolate.\n5. Butterfinger Cake Pops: Mix crushed Butterfinger bars, peanut butter, powdered sugar, and cake crumbs. Form into balls, chill, and dip in melted chocolate.\n6. Apple Cinnamon Cake Pops: Mix diced apples, cinnamon, cream cheese, and cake crumbs. Form into balls, chill, and dip in melted white chocolate.\n7. French Toast Cake Pops: Mix bread crumbs, maple syrup, cream cheese, and cake crumbs. Form into balls, chill, and dip in melted white chocolate.""]","def fix_broken_laces_with_tweezers_and_pliers(input_1, input_2):
+    """"""
+    Mimics the action of fixing broken laces that poke your lips using tweezers and pliers.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A realistic description of the result of fixing broken laces with tweezers and pliers.
+    """"""
+    return ""Successfully fixed the broken laces that were poking the lips using tweezers and pliers.""
+"
+19,How to Handle Poking Wires on Braces,['Health'],"['Try to bend thinner poking wires using the eraser end of a pencil.', 'Use tweezers to fix poking wires in the back of your mouth.', 'Fix broken laces that poke your lips using tweezers and pliers.']","[['bend_thinner_poking_wires', 'fix_poking_wires_with_tweezers', 'fix_broken_laces_with_tweezers_and_pliers']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Try to bend thinner poking wires using the eraser end of a pencil.'}, {'id': 3, 'label': 'Use tweezers to fix poking wires in the back of your mouth.'}, {'id': 4, 'label': 'Fix broken laces that poke your lips using tweezers and pliers.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}]}}","['To handle poking wires on braces, you can try the following steps: First, bend the thinner poking wires using the eraser end of a pencil. If the wires are in the back of your mouth, use tweezers to fix them. For broken laces that poke your lips, use tweezers and pliers to fix them.']","def substitution_signal(input_1, input_2):
+    """"""
+    Mimics the action of sideline referees making a rectangle for a substitution.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A description of the substitution signal.
+    """"""
+    return ""The sideline referees hold their arms up and form a rectangle shape to indicate a substitution.""
+"
+20,How to Understand Soccer Referee Signals,['Education and Communication'],"['Notice the sideline ref pointing to the corner for a corner kick.', 'Watch the sideline referee point in one direction for the throw-in signal.', 'Note that the ref will stop and point their flag for an offside.', 'Observe the sideline referees making a rectangle for a substitution.']","[['corner_kick_signal', 'throw_in_signal', 'offside_signal', 'substitution_signal']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Notice the sideline ref pointing to the corner for a corner kick.'}, {'id': 3, 'label': 'Watch the sideline referee point in one direction for the throw-in signal.'}, {'id': 4, 'label': 'Note that the ref will stop and point their flag for an offside.'}, {'id': 5, 'label': 'Observe the sideline referees making a rectangle for a substitution.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}]}}","['To understand soccer referee signals: For a corner kick, the sideline referee points to the corner flag with their arm extended. For a throw-in, the sideline referee points in the direction of the throw-in with their arm extended. For an offside, the referee stops play and raises their flag horizontally. For a substitution, the sideline referees hold their arms up and form a rectangle shape.']","def identify_where_eczema_occurs(input_1, input_2):
+    """"""
+    Simulates identifying common areas where eczema occurs.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A description of common areas affected by eczema.
+    """"""
+    return ""Eczema commonly occurs on the face, neck, and inside of the elbows and knees.""
+"
+21,How to Tell the Difference Between Eczema and Psoriasis,['Health'],"['Monitor for red-brown patches.', 'Check for dry skin.', 'Identify where eczema occurs.']","[['monitor_for_red_brown_patches', 'check_for_dry_skin', 'identify_where_eczema_occurs']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Monitor for red-brown patches.'}, {'id': 3, 'label': 'Check for dry skin.'}, {'id': 4, 'label': 'Identify where eczema occurs.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}]}}","['To differentiate between eczema and psoriasis, observe the following: Eczema often presents with extremely dry and flaky skin, especially on the hands and feet. It commonly occurs on the face, neck, and inside of the elbows and knees. Psoriasis, on the other hand, is characterized by red-brown patches, typically observed on the elbows and knees.']","def make_spinach_feta_hummus(input_1, input_2):
+    """"""
+    Provides a recipe for spinach feta hummus.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A recipe for spinach feta hummus.
+    """"""
+    return ""Ingredients: 1 can chickpeas, 1 cup fresh spinach, 1/4 cup crumbled feta, 1/4 cup tahini, 1/4 cup lemon juice, 2 cloves garlic, 2 tbsp olive oil, salt to taste. Instructions: Blend all ingredients until smooth.""
+"
+22,How to Make Flavored Hummus,['Food and Entertainment'],"['Try roasted red pepper hummus.', 'Make roasted garlic parmesan hummus.', 'Add avocado.', 'Make cilantro jalapeño hummus.', 'Try cumin roasted carrot hummus.', 'Make spinach feta hummus.']","[['try_roasted_red_pepper_hummus', 'make_roasted_garlic_parmesan_hummus', 'add_avocado', 'make_cilantro_jalapeno_hummus', 'try_cumin_roasted_carrot_hummus', 'make_spinach_feta_hummus']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Try roasted red pepper hummus.'}, {'id': 3, 'label': 'Make roasted garlic parmesan hummus.'}, {'id': 4, 'label': 'Add avocado.'}, {'id': 5, 'label': 'Make cilantro jalapeño hummus.'}, {'id': 6, 'label': 'Try cumin roasted carrot hummus.'}, {'id': 7, 'label': 'Make spinach feta hummus.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}]}}","['To make flavored hummus, you can try the following recipes: Roasted Red Pepper Hummus, Roasted Garlic Parmesan Hummus, Avocado Hummus, Cilantro Jalapeño Hummus, Cumin Roasted Carrot Hummus, and Spinach Feta Hummus. Each recipe involves blending chickpeas with various ingredients like roasted red peppers, roasted garlic, avocado, cilantro, jalapeño, roasted carrots, spinach, and feta.']","def play_as_dunmer(input_1, input_2):
+    """"""
+    Generates a description of playing as a Dunmer (Dark Elf) in Elder Scrolls Online.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Dunmer, or Dark Elves, are known for their balanced abilities in both magic and combat. They are a good choice for Sorcerers who want to combine spellcasting with weapon skills. Their racial skills include increased Magicka and Stamina, fire resistance, and bonuses to both spell and weapon damage.""
+"
+23,How to Play a Sorcerer in Elder Scrolls Online,['Food and Entertainment'],"['Play as a Altmer.', 'Play as a Breton.', 'Play as an Dunmer.']","[['play_as_altmer', 'play_as_breton', 'play_as_dunmer']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Play as a Altmer.'}, {'id': 3, 'label': 'Play as a Breton.'}, {'id': 4, 'label': 'Play as an Dunmer.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}]}}","['To play a Sorcerer in Elder Scrolls Online, you can choose from several races that complement magical abilities. Altmer (High Elves) are known for their strong magical prowess and increased Magicka. Bretons offer versatility with bonuses to Magicka and reduced spell costs. Dunmer (Dark Elves) provide a balanced approach with bonuses to both spell and weapon damage, making them a good choice for hybrid builds.']","def try_external_hip_rotation_exercises(input_1, input_2):
+    """"""
+    Mimics the action of performing external hip rotation exercises and returns a description of the exercise.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""External hip rotation exercises target the outer hip muscles. Sit on the floor with legs bent, rotate one leg outward while keeping the other leg stationary.""
+"
+24,How to Strengthen Hips with Exercise,['Health'],"['Perform lunges.', 'Do side squats.', 'Do hip abduction exercises.', 'Perform hip adduction exercises.', 'Try hip extension exercises.', 'Do internal hip rotation exercises.', 'Try external hip rotation exercises.']","[['perform_lunges', 'do_side_squats', 'do_hip_abduction_exercises', 'perform_hip_adduction_exercises', 'try_hip_extension_exercises', 'do_internal_hip_rotation_exercises', 'try_external_hip_rotation_exercises']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Perform lunges.'}, {'id': 3, 'label': 'Do side squats.'}, {'id': 4, 'label': 'Do hip abduction exercises.'}, {'id': 5, 'label': 'Perform hip adduction exercises.'}, {'id': 6, 'label': 'Try hip extension exercises.'}, {'id': 7, 'label': 'Do internal hip rotation exercises.'}, {'id': 8, 'label': 'Try external hip rotation exercises.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 0, 'to': 8}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}, {'from': 8, 'to': 1}]}}","['To strengthen your hips with exercise, you can perform lunges, side squats, hip abduction exercises, hip adduction exercises, hip extension exercises, internal hip rotation exercises, and external hip rotation exercises. Each of these exercises targets different muscles around the hip area, providing a comprehensive workout.']","def create_old_fashioned_plum_pudding(input_1, input_2):
+    """"""
+    Mimics the process of creating an old-fashioned plum pudding and returns a recipe.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A realistic recipe for creating an old-fashioned plum pudding.
+    """"""
+    return """"""Ingredients:\n- 2 cups of chopped plums\n- 1 cup of breadcrumbs\n- 1/2 cup of brown sugar\n- 1/2 cup of suet\n- 1/2 cup of flour\n- 1/2 teaspoon of cinnamon\n- 1/4 teaspoon of nutmeg\n- 2 eggs\n- 1/2 cup of milk\n\nInstructions:\n1. In a bowl, mix breadcrumbs, brown sugar, suet, flour, cinnamon, and nutmeg.\n2. Add chopped plums and mix well.\n3. Beat eggs and milk together, then add to the dry mixture.\n4. Pour the mixture into a greased pudding mold.\n5. Cover with foil and steam for 2 hours.\n6. Let it cool before serving.""""""
+"
+25,How to Eat Plums,['Food and Entertainment'],"['Bake a plum pie.', 'Make a delicious crisp.', 'Bake a plum cake.', 'Create an old-fashioned plum pudding.']","[['bake_plum_pie', 'make_delicious_crisp', 'bake_plum_cake', 'create_old_fashioned_plum_pudding']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Bake a plum pie.'}, {'id': 3, 'label': 'Make a delicious crisp.'}, {'id': 4, 'label': 'Bake a plum cake.'}, {'id': 5, 'label': 'Create an old-fashioned plum pudding.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}]}}","['To enjoy plums, you can try baking a plum pie, making a delicious crisp, baking a plum cake, or creating an old-fashioned plum pudding. Each of these recipes offers a unique and tasty way to savor the flavor of plums.']","def talk_to_your_instructor(input_1, input_2):
+    """"""
+    Provides information about how to contact the instructor for the subject.
+
+    Args:
+        input_1(str): The subject for which instructor contact information is needed.
+        input_2 (bool): Whether to include office hours.
+
+    Returns:
+        str: A JSON string containing details about the instructor, including name, email, and office hours.
+    """"""
+    import json
+    data = {
+        ""instructor"": {""name"": ""Dr. Emily Brown"", ""email"": ""emily.brown@example.com"", ""office_hours"": ""Tue 2pm-4pm, Thu 10am-12pm""}
+    }
+    return json.dumps(data)
+"
+26,How to Read a Chapter of Biology,['Education and Communication'],"['Utilize tutoring centers.', 'Ask classmates.', 'Participate in study groups.', 'Talk to your instructor.']","[['utilize_tutoring_centers', 'ask_classmates', 'participate_in_study_groups', 'talk_to_your_instructor']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Utilize tutoring centers.'}, {'id': 3, 'label': 'Ask classmates.'}, {'id': 4, 'label': 'Participate in study groups.'}, {'id': 5, 'label': 'Talk to your instructor.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}]}}","['To read a chapter of Biology effectively, you can utilize the following resources: Visit the Biology Tutoring Center in Building A, Room 101, available Mon-Fri 9am-5pm. You can also ask classmates like Alice Johnson (alice.johnson@example.com) or Bob Smith (bob.smith@example.com) for help. Participate in study groups such as Biology Study Group A, meeting on Wed 3pm-5pm in Library Room 3, or Biology Study Group B, meeting online via Zoom on Fri 1pm-3pm. Lastly, you can talk to your instructor, Dr. Emily Brown, by emailing emily.brown@example.com or visiting during office hours on Tue 2pm-4pm and Thu 10am-12pm.']","def treat_anal_irritation(input_1, input_2):
+    """"""
+    Put the cream on your anal area for hemorrhoids and other irritation.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Clean the anal area with mild soap and water, then apply the cream to the affected area.""
+"
+27,How to Apply Orajel,['Health'],"['Treat minor pain on your skin or around your nails.', 'Relieve pain from bee or wasp stings.', 'Apply it inside your mouth for nerve pain, cold sores, or throat irritation.', 'Use Orajel on your vagina to relieve irritation.', 'Put the cream on your anal area for hemorrhoids and other irritation.']","[['treat_minor_pain', 'relieve_bee_wasp_stings', 'apply_inside_mouth', 'relieve_vaginal_irritation', 'treat_anal_irritation']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Treat minor pain on your skin or around your nails.'}, {'id': 3, 'label': 'Relieve pain from bee or wasp stings.'}, {'id': 4, 'label': 'Apply it inside your mouth for nerve pain, cold sores, or throat irritation.'}, {'id': 5, 'label': 'Use Orajel on your vagina to relieve irritation.'}, {'id': 6, 'label': 'Put the cream on your anal area for hemorrhoids and other irritation.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}]}}","['To apply Orajel, follow these steps based on the affected area: For minor skin pain, apply a small amount to the area 3-4 times daily. For bee or wasp stings, clean the area with soap and water, then apply the cream. For nerve pain, cold sores, or throat irritation inside the mouth, use a cotton swab to apply a small amount of the gel. For vaginal irritation, apply a small amount to the irritated area up to 3 times daily. For anal irritation or hemorrhoids, clean the area with mild soap and water, then apply the cream.']","def bold_red_polish(input_1, input_2):
+    """"""
+    Mimics the functionality of going for bright red to look bold.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A description of how bright red nail polish can create a bold look.
+    """"""
+    return ""Bright red nail polish is a timeless choice for those who want to make a bold statement. It is a powerful colour that exudes confidence and passion.""
+"
+28,How to Choose Nail Polish Colour That Suits You,['Food and Entertainment'],"['Use metallics to convey a wild personality.', 'Go for an edgy look with black polish.', 'Pick bright colours for an energetic look.', 'Choose muted colours for a softer look.', 'Show off sophistication with darker polish.', 'Go for bright red to look bold.']","[['use_metallics', 'edgy_black_polish', 'bright_colours_energetic', 'muted_colours_softer_look', 'sophisticated_darker_polish', 'bold_red_polish']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Use metallics to convey a wild personality.'}, {'id': 3, 'label': 'Go for an edgy look with black polish.'}, {'id': 4, 'label': 'Pick bright colours for an energetic look.'}, {'id': 5, 'label': 'Choose muted colours for a softer look.'}, {'id': 6, 'label': 'Show off sophistication with darker polish.'}, {'id': 7, 'label': 'Go for bright red to look bold.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}]}}","['To choose a nail polish colour that suits you, consider the following options: Use metallics to convey a wild personality, go for an edgy look with black polish, pick bright colours for an energetic look, choose muted colours for a softer look, show off sophistication with darker polish, or go for bright red to look bold.']","def make_creamy_broccoli_soup(input_1, input_2):
+    """"""
+    Provides a recipe for making a creamy broccoli soup.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A recipe for creamy broccoli soup.
+    """"""
+    return ""Creamy Broccoli Soup: Sauté onions and garlic in butter until soft. Add broccoli florets and chicken broth, and simmer until broccoli is tender. Blend until smooth, then stir in cream and season with salt and pepper.""
+"
+29,How to Eat Broccoli,['Food and Entertainment'],"['Cook with broccoli to enhance the flavor and add nutrients to other dishes.', 'Roast broccoli in the oven for a crispy broccoli recipe.', 'Steam broccoli in a steamer basket or in a microwave.', 'Cook broccoli in a pan for a quick and easy cooking method.', 'Add broccoli to pasta for more texture and taste.', 'Use broccoli in stir fry recipes as the main vegetable.', 'Make a creamy broccoli soup for a comforting vegetable soup.']","[['cook_with_broccoli', 'roast_broccoli', 'steam_broccoli', 'cook_broccoli_in_pan', 'add_broccoli_to_pasta', 'use_broccoli_in_stir_fry', 'make_creamy_broccoli_soup']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Cook with broccoli to enhance the flavor and add nutrients to other dishes.'}, {'id': 3, 'label': 'Roast broccoli in the oven for a crispy broccoli recipe.'}, {'id': 4, 'label': 'Steam broccoli in a steamer basket or in a microwave.'}, {'id': 5, 'label': 'Cook broccoli in a pan for a quick and easy cooking method.'}, {'id': 6, 'label': 'Add broccoli to pasta for more texture and taste.'}, {'id': 7, 'label': 'Use broccoli in stir fry recipes as the main vegetable.'}, {'id': 8, 'label': 'Make a creamy broccoli soup for a comforting vegetable soup.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 0, 'to': 8}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}, {'from': 8, 'to': 1}]}}","['To eat broccoli, you can try various methods such as cooking it with other dishes to enhance flavor and nutrients, roasting it in the oven for a crispy texture, steaming it using a steamer basket or microwave, cooking it in a pan for a quick method, adding it to pasta for more texture and taste, using it in stir fry recipes as the main vegetable, or making a creamy broccoli soup for a comforting meal.']","def identify_honey_mushrooms(input_1, input_2):
+    """"""
+    Detailed description of the what the function does
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Honey mushrooms produce a white spore print, while deadly Galerina produce a rusty brown spore print.""
+"
+30,How to Identify Poisonous Mushrooms,['Health'],"['Distinguish true from false morels by looking at the cap shape and interior.', 'Take a spore print to identify green-spored parasols from shaggy parasols.', ""Check the gills to distinguish chanterelles from Jack o'lanterns."", 'Identify honey mushrooms from deadly Galerina with a spore print.']","[['distinguish_morels', 'take_spore_print', 'check_gills', 'identify_honey_mushrooms']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Distinguish true from false morels by looking at the cap shape and interior.'}, {'id': 3, 'label': 'Take a spore print to identify green-spored parasols from shaggy parasols.'}, {'id': 4, 'label': ""Check the gills to distinguish chanterelles from Jack o'lanterns.""}, {'id': 5, 'label': 'Identify honey mushrooms from deadly Galerina with a spore print.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}]}}","[""To identify poisonous mushrooms: True morels have a cap that is attached to the stem and is hollow inside, while false morels have a cap that hangs freely and is chambered inside. Green-spored parasols produce a green spore print, while shaggy parasols produce a white spore print. Chanterelles have forked gills that are blunt and run down the stem, while Jack o'lanterns have sharp, non-forked gills that do not run down the stem. Honey mushrooms produce a white spore print, while deadly Galerina produce a rusty brown spore print.""]","def do_some_relaxation(input_1, input_2):
+    """"""
+    Simulates doing some relaxation by generating a realistic description of a relaxation technique.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A description of a relaxation technique that can help in reducing stress.
+    """"""
+    return ""You lie down in a comfortable position, close your eyes, and listen to a guided meditation that helps you relax your muscles and clear your mind.""
+"
+31,How to Control Bipolar Irritability,['Health'],"['Take some alone time.', 'Practice deep breathing.', 'Do some relaxation.']","[['take_some_alone_time', 'practice_deep_breathing', 'do_some_relaxation']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Take some alone time.'}, {'id': 3, 'label': 'Practice deep breathing.'}, {'id': 4, 'label': 'Do some relaxation.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}]}}","['To control bipolar irritability, you can try taking some alone time by walking in a nearby park, practicing deep breathing exercises, or doing some relaxation techniques like guided meditation.']","def access_performance_mode(input_1, input_2):
+    """"""
+    Detailed description of the what the function does
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return 'Performance Mode: Go to career and press triangle, triangle, x, triangle, triangle, square twice.'
+"
+32,How to Enter Cheats on Guitar Hero2 With Dual Shock,['Food and Entertainment'],"['To access hyper speed mode, at the main menu press triangle, square, x, square, triangle, square, x, square until a message appears', 'To unlock everything, (saving is disabled) at the main menu press x, triangle, square, circle, square, triangle, circle, triangle, circle, triangle, circle, triangle, circle, triangle, circle, triangle.', 'To have a flaming head, at the main menu press square, triangle, square, square, triangle, square, triangle, triangle.', 'To access performance mode,at the main menu, go to career and do the combination twice-- triangle, triangle, x, triangle, triangle, square.']","[['access_hyper_speed_mode', 'unlock_everything', 'flaming_head', 'access_performance_mode']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'To access hyper speed mode, at the main menu press triangle, square, x, square, triangle, square, x, square until a message appears'}, {'id': 3, 'label': 'To unlock everything, (saving is disabled) at the main menu press x, triangle, square, circle, square, triangle, circle, triangle, circle, triangle, circle, triangle, circle, triangle, circle, triangle.'}, {'id': 4, 'label': 'To have a flaming head, at the main menu press square, triangle, square, square, triangle, square, triangle, triangle.'}, {'id': 5, 'label': 'To access performance mode,at the main menu, go to career and do the combination twice-- triangle, triangle, x, triangle, triangle, square.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}]}}","['To enter cheats on Guitar Hero 2 with Dual Shock, you can use the following combinations at the main menu:\n1. Hyper Speed Mode: Press triangle, square, x, square, triangle, square, x, square until a message appears.\n2. Unlock Everything: Press x, triangle, square, circle, square, triangle, circle, triangle, circle, triangle, circle, triangle, circle, triangle, circle, triangle.\n3. Flaming Head: Press square, triangle, square, square, triangle, square, triangle, triangle.\n4. Performance Mode: Go to career and press triangle, triangle, x, triangle, triangle, square twice.']","def set_limits_with_friends_roommates(input_1, input_2):
+    """"""
+    Simulates setting limits with friends and roommates by generating a list of agreed-upon rules and boundaries.
+
+    Args:
+        input_1(str): The type of limit or boundary to set (e.g., quiet hours, shared chores).
+        input_2 (bool): Whether the limit is for friends or roommates.
+
+    Returns:
+        str: A JSON string containing the agreed-upon rules and boundaries.
+    """"""
+    import json
+    limits = {
+        ""context"": ""Roommates"",
+        ""rules"": [
+            {""rule"": ""Quiet hours from 10 PM to 7 AM""},
+            {""rule"": ""Shared chores schedule: Cleaning on Saturdays""},
+            {""rule"": ""No guests after 9 PM on weekdays""}
+        ]
+    }
+    return json.dumps(limits)
+"
+33,How to Manage Your Time in College,['Education and Communication'],"['Start a study group.', 'Find a writing partner.', 'Set limits with your friends and roommates.']","[['start_study_group', 'find_writing_partner', 'set_limits_with_friends_roommates']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Start a study group.'}, {'id': 3, 'label': 'Find a writing partner.'}, {'id': 4, 'label': 'Set limits with your friends and roommates.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}]}}","[""To manage your time in college, you can start by joining or forming a study group. For example, you could create an 'Advanced Calculus Study Group' with members like Alice Johnson, Bob Smith, and Charlie Brown, meeting on Wednesdays at 5 PM. Additionally, finding a writing partner for your research papers can be beneficial; potential partners could include David Lee, Eva Green, and Frank White. Lastly, setting clear limits with your roommates, such as quiet hours from 10 PM to 7 AM and a shared chores schedule, can help maintain a conducive study environment.""]","def create_scotch_stitch(input_1, input_2):
+    """"""
+    Mimics the creation of a scotch stitch on a plastic canvas.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A detailed explanation of how to create a scotch stitch.
+    """"""
+    return ""To create a scotch stitch, bring the needle up through the fabric at the starting point, then down at the ending point, creating a diagonal stitch. Repeat this process in a grid pattern to create a series of scotch stitches.""
+"
+34,How to Stitch Plastic Canvas,['Home and Garden'],"['Execute backstitches.', 'Create a continental stitch.', 'Generate a reverse continental stitch.', 'Produce a cross stitch.', 'Generate a long stitch.', 'Execute a running stitch.', 'Create a scotch stitch.']","[['execute_backstitches', 'create_continental_stitch', 'generate_reverse_continental_stitch', 'produce_cross_stitch', 'generate_long_stitch', 'execute_running_stitch', 'create_scotch_stitch']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Execute backstitches.'}, {'id': 3, 'label': 'Create a continental stitch.'}, {'id': 4, 'label': 'Generate a reverse continental stitch.'}, {'id': 5, 'label': 'Produce a cross stitch.'}, {'id': 6, 'label': 'Generate a long stitch.'}, {'id': 7, 'label': 'Execute a running stitch.'}, {'id': 8, 'label': 'Create a scotch stitch.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 0, 'to': 8}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}, {'from': 8, 'to': 1}]}}","['To stitch plastic canvas, you can use various techniques such as backstitches, continental stitches, reverse continental stitches, cross stitches, long stitches, running stitches, and scotch stitches. Each technique involves specific steps to bring the needle up and down through the fabric, creating different patterns and effects.']","def create_a_wardrobe_that_makes_you_look_and_feel_good(input_1, input_2):
+    """"""
+    Provides tips for creating a wardrobe that enhances appearance and confidence.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A JSON string containing tips for creating a wardrobe that makes one look and feel good.
+    """"""
+    import json
+    wardrobe_tips = [
+        ""Choose clothes that fit well and are comfortable."",
+        ""Incorporate colors that complement your skin tone."",
+        ""Invest in quality basics that can be mixed and matched."",
+        ""Accessorize to add a personal touch to your outfits.""
+    ]
+    return json.dumps(wardrobe_tips)
+"
+35,How to Be Happy Being Yourself,['Health'],"['Identify what you  love about your body.', 'Exercise.', 'Eat healthy foods to improve your mood.', 'Create a wardrobe that makes you look and feel good.']","[['identify_what_you_love_about_your_body', 'exercise', 'eat_healthy_foods_to_improve_your_mood', 'create_a_wardrobe_that_makes_you_look_and_feel_good']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Identify what you  love about your body.'}, {'id': 3, 'label': 'Exercise.'}, {'id': 4, 'label': 'Eat healthy foods to improve your mood.'}, {'id': 5, 'label': 'Create a wardrobe that makes you look and feel good.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}]}}","['To be happy being yourself, start by identifying what you love about your body. For example, you might appreciate your expressive eyes or your strong legs. Incorporate regular exercise into your routine, such as brisk walking or yoga stretches. Eating healthy foods like fresh fruits, leafy greens, and whole grains can also improve your mood. Finally, create a wardrobe that makes you look and feel good by choosing clothes that fit well and complement your skin tone.']","def go_for_foods_high_in_zinc(input_1, input_2):
+    """"""
+    Mimics the action of going for foods high in zinc by returning a list of zinc-rich foods.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A JSON string containing a list of zinc-rich foods.
+    """"""
+    import json
+    zinc_rich_foods = [
+        ""Oysters"",
+        ""Beef"",
+        ""Pumpkin seeds"",
+        ""Lentils"",
+        ""Chickpeas"",
+        ""Cashews""
+    ]
+    return json.dumps(zinc_rich_foods)
+"
+36,How to Increase Your Leptin Sensitivity,['Health'],"['Eat a protein-packed breakfast.', 'Eat healthy fats.', 'Eat lots of leafy greens, fruits, and other veggies.', 'Go for foods high in zinc.']","[['eat_protein_packed_breakfast', 'eat_healthy_fats', 'eat_lots_of_leafy_greens_fruits_and_other_veggies', 'go_for_foods_high_in_zinc']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Eat a protein-packed breakfast.'}, {'id': 3, 'label': 'Eat healthy fats.'}, {'id': 4, 'label': 'Eat lots of leafy greens, fruits, and other veggies.'}, {'id': 5, 'label': 'Go for foods high in zinc.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}]}}","['To increase your leptin sensitivity, you can start by eating a protein-packed breakfast such as Greek yogurt with nuts and berries or scrambled eggs with spinach. Incorporate healthy fats like avocados and olive oil into your diet. Make sure to eat lots of leafy greens, fruits, and other veggies such as spinach, kale, and blueberries. Additionally, go for foods high in zinc like oysters and beef.']","def get_new_experiences(input_1, input_2):
+    """"""
+    Provides a list of new experiences to help rediscover yourself.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A JSON string containing a list of new experiences.
+    """"""
+    import json
+    experiences = [
+        {""experience"": ""Cooking Class"", ""location"": ""Local Community Center""},
+        {""experience"": ""Dance Lessons"", ""location"": ""Dance Studio""},
+        {""experience"": ""Travel to a New City"", ""location"": ""Various""}
+    ]
+    return json.dumps(experiences)
+"
+37,How to Deal with Taking a Break in a Relationship,['Family Life'],"['Exercise to help you get active and healthy.', 'Spend time with family and friends.', 'Enjoy your hobbies and interests.', 'Try something new to help rediscover yourself.']","[['get_exercise_recommendations', 'get_family_time_activities', 'get_hobby_suggestions', 'get_new_experiences']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Exercise to help you get active and healthy.'}, {'id': 3, 'label': 'Spend time with family and friends.'}, {'id': 4, 'label': 'Enjoy your hobbies and interests.'}, {'id': 5, 'label': 'Try something new to help rediscover yourself.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}]}}","['To deal with taking a break in a relationship, you can focus on self-improvement and personal growth. Start by getting active and healthy with exercises like running, yoga, or cycling. Spend quality time with family and friends through activities such as board games, picnics, or movie nights. Enjoy your hobbies and interests like painting, gardening, or photography. Finally, try something new to rediscover yourself, such as taking a cooking class, dance lessons, or traveling to a new city.']","def notice_nitrites(input_1, input_2):
+    """"""
+    Simulates the detection of nitrites, which are a category of inhalants.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A list of common nitrites that are often abused as inhalants in a realistic format.
+    """"""
+    import json
+    nitrites = [
+        ""Amyl nitrite"",
+        ""Butyl nitrite"",
+        ""Cyclohexyl nitrite""
+    ]
+    return json.dumps(nitrites)
+"
+38,How to Spot Signs of Inhalant Abuse,['Health'],"['Look for volatile solvents.', 'Recognize gasses.', 'Learn about aerosols.', 'Notice nitrites.']","[['look_for_volatile_solvents', 'recognize_gasses', 'learn_about_aerosols', 'notice_nitrites']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Look for volatile solvents.'}, {'id': 3, 'label': 'Recognize gasses.'}, {'id': 4, 'label': 'Learn about aerosols.'}, {'id': 5, 'label': 'Notice nitrites.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}]}}","['To spot signs of inhalant abuse, look for the presence of volatile solvents such as Acetone and Benzene, gasses like Nitrous oxide and Butane, aerosols including Spray paint and Deodorant sprays, and nitrites such as Amyl nitrite and Butyl nitrite.']","def various_perspectives(input_1, input_2):
+    """"""
+    Write from various perspectives, such as animals or inanimate objects, to generate ideas.
+
+    Args:
+        input_1(str): The type of perspective to write from.
+        input_2 (bool): A flag to determine if the perspective should be realistic or fantastical.
+
+    Returns:
+        str: A string containing a short piece written from a unique perspective.
+    """"""
+    perspective_text = ""As the old oak tree, I have witnessed countless seasons come and go. I have seen children play under my shade and lovers carve their initials into my bark...""
+    return perspective_text
+"
+39,How to Get Inspired to Write,['Education and Communication'],"['Try word association to get the ideas flowing.', 'Freewrite to generate ideas.', 'Listen to music to think of new ideas.', 'Use writing prompts to get you started.', 'Write about your hobbies and interests.', 'Reflect on a past memory or event for ideas.', 'Write from various perspectives, like animals and inanimate objects.']","[['word_association', 'freewrite', 'listen_to_music', 'writing_prompts', 'hobbies_and_interests', 'past_memory', 'various_perspectives']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Try word association to get the ideas flowing.'}, {'id': 3, 'label': 'Freewrite to generate ideas.'}, {'id': 4, 'label': 'Listen to music to think of new ideas.'}, {'id': 5, 'label': 'Use writing prompts to get you started.'}, {'id': 6, 'label': 'Write about your hobbies and interests.'}, {'id': 7, 'label': 'Reflect on a past memory or event for ideas.'}, {'id': 8, 'label': 'Write from various perspectives, like animals and inanimate objects.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 0, 'to': 8}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}, {'from': 8, 'to': 1}]}}","['To get inspired to write, you can try word association to generate related ideas, freewrite to let your thoughts flow, listen to music for new ideas, use writing prompts to get started, write about your hobbies and interests, reflect on past memories, or write from various perspectives like animals or inanimate objects.']","def invest_in_better_quality_wardrobe(input_1, input_2):
+    """"""
+    Provides tips on investing in a better quality, better fitting wardrobe.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Choose classic, well-fitting pieces that flatter your body shape. Invest in quality fabrics and timeless styles that can be mixed and matched.""
+"
+40,How to Stay Young Looking After 40,['Health'],"['Use minimalist, youthful makeup.', 'Color your hair.', 'Whiten your teeth.', 'Invest in a better quality, better fitting wardrobe.']","[['use_minimalist_youthful_makeup', 'color_your_hair', 'whiten_your_teeth', 'invest_in_better_quality_wardrobe']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Use minimalist, youthful makeup.'}, {'id': 3, 'label': 'Color your hair.'}, {'id': 4, 'label': 'Whiten your teeth.'}, {'id': 5, 'label': 'Invest in a better quality, better fitting wardrobe.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}]}}","['To stay young looking after 40, use a lightweight foundation, a touch of blush, and a natural lip color. Avoid heavy eye makeup and opt for a fresh, dewy look. Choose a hair color that complements your skin tone, consider highlights or lowlights to add dimension, and avoid very dark or very light shades. Use whitening toothpaste, consider professional whitening treatments, and avoid foods and drinks that stain your teeth. Finally, choose classic, well-fitting pieces that flatter your body shape, invest in quality fabrics, and timeless styles that can be mixed and matched.']","def indicate_general_or_non_specific_object_with_indefinite_pronouns(input_1, input_2):
+    """"""
+    Generate sentences indicating a general or non-specific object with indefinite pronouns.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A JSON string containing sentences with indefinite pronouns.
+    """"""
+    import json
+    sentences = [
+        ""Someone left their umbrella."",
+        ""Anyone can join the club."",
+        ""Everyone enjoyed the party."",
+        ""Nobody knows the answer.""
+    ]
+    return json.dumps(sentences)
+"
+41,How to Use Pronouns,['Education and Communication'],"['Ask questions with interrogative pronouns.', 'Refer to nouns with demonstrative pronouns.', 'Define nouns with relative pronouns.', 'Emphasize with intensive pronouns.', 'Show that the subject is also receiving the action with reflexive pronouns.', 'Indicate a general or non-specific object with indefinite pronouns.']","[['ask_questions_with_interrogative_pronouns', 'refer_to_nouns_with_demonstrative_pronouns', 'define_nouns_with_relative_pronouns', 'emphasize_with_intensive_pronouns', 'show_subject_receiving_action_with_reflexive_pronouns', 'indicate_general_or_non_specific_object_with_indefinite_pronouns']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Ask questions with interrogative pronouns.'}, {'id': 3, 'label': 'Refer to nouns with demonstrative pronouns.'}, {'id': 4, 'label': 'Define nouns with relative pronouns.'}, {'id': 5, 'label': 'Emphasize with intensive pronouns.'}, {'id': 6, 'label': 'Show that the subject is also receiving the action with reflexive pronouns.'}, {'id': 7, 'label': 'Indicate a general or non-specific object with indefinite pronouns.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}]}}","[""To use pronouns effectively, you can follow these guidelines: Use interrogative pronouns to ask questions (e.g., 'What is your name?'), demonstrative pronouns to refer to specific nouns (e.g., 'This is my book.'), relative pronouns to define nouns (e.g., 'The person who called you is my friend.'), intensive pronouns to emphasize (e.g., 'I myself completed the project.'), reflexive pronouns to show the subject receiving the action (e.g., 'I taught myself to play the guitar.'), and indefinite pronouns to indicate non-specific objects (e.g., 'Someone left their umbrella.').""]","def calculate_temple_arm_length(input_1, input_2):
+    """"""
+    Detailed description of the what the function does
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return '140 mm'"
+42,How to Measure Glasses,['Others'],"['Read the 3 numbers on the inside of an arm to find the measurements.', 'Measure the glasses lenses from side to side to find the lens width.', 'Calculate the vertical lens height by measuring from top to bottom.', 'Measure the width of the frame from top right to top left.', 'Take the measurement of the small bar that goes above your nose.', 'Calculate the length of the temple arms by measuring from end to tip.']","[['read_arm_measurements', 'measure_lens_width', 'calculate_vertical_lens_height', 'measure_frame_width', 'measure_nose_bridge', 'calculate_temple_arm_length']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Read the 3 numbers on the inside of an arm to find the measurements.'}, {'id': 3, 'label': 'Measure the glasses lenses from side to side to find the lens width.'}, {'id': 4, 'label': 'Calculate the vertical lens height by measuring from top to bottom.'}, {'id': 5, 'label': 'Measure the width of the frame from top right to top left.'}, {'id': 6, 'label': 'Take the measurement of the small bar that goes above your nose.'}, {'id': 7, 'label': 'Calculate the length of the temple arms by measuring from end to tip.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}]}}","['To measure glasses, follow these steps: 1. Read the 3 numbers on the inside of an arm to find the measurements: 52-18-140. 2. Measure the glasses lenses from side to side to find the lens width: 52 mm. 3. Calculate the vertical lens height by measuring from top to bottom: 40 mm. 4. Measure the width of the frame from top right to top left: 140 mm. 5. Take the measurement of the small bar that goes above your nose: 18 mm. 6. Calculate the length of the temple arms by measuring from end to tip: 140 mm.']","def use_tapioca_instead(input_1, input_2):
+    """"""
+    Mimics the process of using tapioca instead of flour or cornstarch in custard.
+
+    Args:
+        input_1(str): Description of the custard ingredients.
+        input_2 (bool): Indicates whether the mixture should be stirred continuously.
+
+    Returns:
+        str: A realistic description of the process and result of using tapioca instead of flour or cornstarch in the custard.
+    """"""
+    return ""Mix 1 tablespoon of tapioca with 2 tablespoons of cold water until smooth. Gradually add this mixture to the custard ingredients while stirring continuously to avoid lumps. Cook over medium heat until the custard thickens.""
+"
+43,How to Thicken Custard,['Food and Entertainment'],"['Add flour and cold water mix to custard ingredients.', 'Use cornstarch as an alternative to flour.', 'Use tapioca instead of flour or cornstarch.']","[['add_flour_and_cold_water_mix', 'use_cornstarch_alternative', 'use_tapioca_instead']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Add flour and cold water mix to custard ingredients.'}, {'id': 3, 'label': 'Use cornstarch as an alternative to flour.'}, {'id': 4, 'label': 'Use tapioca instead of flour or cornstarch.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}]}}","['To thicken custard, you can use one of the following methods: 1) Mix 2 tablespoons of flour with 1/4 cup of cold water until smooth, then gradually add to the custard while stirring continuously and cook over medium heat until thickened. 2) Mix 1 tablespoon of cornstarch with 2 tablespoons of cold water until smooth, then gradually add to the custard while stirring continuously and cook over medium heat until thickened. 3) Mix 1 tablespoon of tapioca with 2 tablespoons of cold water until smooth, then gradually add to the custard while stirring continuously and cook over medium heat until thickened.']","def buy_us_treasury_bonds(input_1, input_2):
+    """"""
+    Mimics the process of buying U.S. treasury bonds to earn interest bi-annually.
+
+    Args:
+        input_1(str): User's personal information required for bond purchase.
+        input_2 (bool): Whether the user agrees to the terms and conditions.
+
+    Returns:
+        str: Confirmation message with bond details and interest rate.
+    """"""
+    import json
+    bond_details = {
+        'bond_id': 'US123456789',
+        'interest_rate': '1.5%',
+        'confirmation_message': 'Your U.S. treasury bonds have been successfully purchased.'
+    }
+    return json.dumps(bond_details)
+"
+44,How to Live Off Interest,['Others'],"['Sign up for a high yield online savings account to earn 1% interest.', 'Get a credit card that offers cash-back on your purchases.', 'Buy U.S. treasury bonds to earn interest bi-annually.']","[['sign_up_high_yield_savings_account', 'get_cashback_credit_card', 'buy_us_treasury_bonds']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Sign up for a high yield online savings account to earn 1% interest.'}, {'id': 3, 'label': 'Get a credit card that offers cash-back on your purchases.'}, {'id': 4, 'label': 'Buy U.S. treasury bonds to earn interest bi-annually.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}]}}","['To live off interest, you can sign up for a high yield online savings account to earn 1% interest, get a credit card that offers 2% cash-back on your purchases, and buy U.S. treasury bonds to earn 1.5% interest bi-annually.']","def understand_checkered_flag(input_1, input_2):
+    """"""
+    Detailed description of what the function does
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""The checkered flag in NASCAR indicates the end of the race.""
+"
+45,How to Understand the Meaning of NASCAR Flags,['Others'],"['Understand the green flag.', 'Understand the yellow flag.', 'Understand the meaning of the red flag.', 'Understand the black flag.', 'Understand the blue flag.', 'Understand the white flag.', 'Understand the meaning of the checkered flag.']","[['understand_green_flag', 'understand_yellow_flag', 'understand_red_flag', 'understand_black_flag', 'understand_blue_flag', 'understand_white_flag', 'understand_checkered_flag']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Understand the green flag.'}, {'id': 3, 'label': 'Understand the yellow flag.'}, {'id': 4, 'label': 'Understand the meaning of the red flag.'}, {'id': 5, 'label': 'Understand the black flag.'}, {'id': 6, 'label': 'Understand the blue flag.'}, {'id': 7, 'label': 'Understand the white flag.'}, {'id': 8, 'label': 'Understand the meaning of the checkered flag.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 0, 'to': 8}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}, {'from': 8, 'to': 1}]}}","['To understand the meaning of NASCAR flags: The green flag indicates the start or restart of the race. The yellow flag signifies caution, usually due to an accident or debris on the track. The red flag means the race is stopped, often due to severe accidents or weather conditions. The black flag indicates a driver must go to the pits, usually due to a rule violation. The blue flag, often with a diagonal yellow stripe, signals slower cars to yield to faster, lead-lap cars. The white flag signifies the final lap of the race. The checkered flag indicates the end of the race.']","def make_homemade_applesauce(input_1, input_2):
+    """"""
+    Provide a recipe for homemade applesauce.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A recipe for homemade applesauce.
+    """"""
+    return ""Peel and core apples. Cook them in a pot with a bit of water until soft. Mash or blend until smooth. Add cinnamon for extra flavor.""
+"
+46,How to Make Gluten‐Free Snacks for Kids,['Food and Entertainment'],"['Try sliced fruit shish-kabobs.', 'Include dried fruit.', 'Present colorful veggie trays.', 'Make celery sticks fun.', 'Beat the heat with frozen grapes.', 'Make homemade applesauce.']","[['try_sliced_fruit_shish_kabobs', 'include_dried_fruit', 'present_colorful_veggie_trays', 'make_celery_sticks_fun', 'beat_the_heat_with_frozen_grapes', 'make_homemade_applesauce']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Try sliced fruit shish-kabobs.'}, {'id': 3, 'label': 'Include dried fruit.'}, {'id': 4, 'label': 'Present colorful veggie trays.'}, {'id': 5, 'label': 'Make celery sticks fun.'}, {'id': 6, 'label': 'Beat the heat with frozen grapes.'}, {'id': 7, 'label': 'Make homemade applesauce.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}]}}","['To make gluten-free snacks for kids, you can try sliced fruit shish-kabobs by cutting various fruits like strawberries, bananas, and grapes into bite-sized pieces and skewering them onto wooden sticks. Include dried fruit by mixing raisins, apricots, and cranberries into trail mix or yogurt. Present colorful veggie trays by arranging sliced bell peppers, cherry tomatoes, cucumber sticks, and baby carrots on a tray with hummus or ranch dip. Make celery sticks fun by filling them with peanut butter or cream cheese and topping with raisins or sliced almonds. Beat the heat with frozen grapes by washing and freezing them for at least 2 hours. Lastly, make homemade applesauce by peeling and coring apples, cooking them until soft, and mashing or blending until smooth with a bit of cinnamon for extra flavor.']","def check_your_cats_gums(input_1, input_2):
+    """"""
+    Simulates a check of a cat's gums for any issues.
+
+    Args:
+        input_1(str): Description of the gums to check.
+        input_2 (bool): Whether to include detailed check results.
+
+    Returns:
+        str: A report indicating the condition of the cat's gums.
+    """"""
+    return ""The cat's gums are pink and healthy with no signs of inflammation or disease."""
+47,How to Spot Signs of Nutritional Deficiency in Cats,['Health'],"['Search for missing patches of fur.', 'Look at your cat’s skin.', 'Check your cat’s claws.', 'Watch your cat’s grooming habits.', 'Weigh your cat.', 'Check your cat’s gums.']","[['search_for_missing_patches_of_fur', 'look_at_your_cats_skin', 'check_your_cats_claws', 'watch_your_cats_grooming_habits', 'weigh_your_cat', 'check_your_cats_gums']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Search for missing patches of fur.'}, {'id': 3, 'label': 'Look at your cat’s skin.'}, {'id': 4, 'label': 'Check your cat’s claws.'}, {'id': 5, 'label': 'Watch your cat’s grooming habits.'}, {'id': 6, 'label': 'Weigh your cat.'}, {'id': 7, 'label': 'Check your cat’s gums.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 0, 'to': 6}, {'from': 0, 'to': 7}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}, {'from': 6, 'to': 1}, {'from': 7, 'to': 1}]}}","[""To spot signs of nutritional deficiency in cats, you should perform the following checks: 1) Search for missing patches of fur: No missing patches of fur found on the cat's body. 2) Look at your cat's skin: The cat's skin appears healthy with no signs of irritation or infection. 3) Check your cat's claws: The cat's claws are in good condition with no signs of damage or overgrowth. 4) Watch your cat's grooming habits: The cat grooms itself regularly and appears to maintain good hygiene. 5) Weigh your cat: The cat weighs 4.5 kg, which is within the normal range for its age and breed. 6) Check your cat's gums: The cat's gums are pink and healthy with no signs of inflammation or disease.""]","def practice_reading_skills(input_1, input_2):
+    """"""
+    Mimics a tool that advises spending the remaining 20 percent of your time practising your reading skills.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A suggestion on how to practice reading skills.
+    """"""
+    return ""Spend 20% of your time on reading skills. Read articles, books, or any written material in the target language.""
+"
+48,How to Revise Quickly and Effectively,['Education and Communication'],"['Spend 30 percent of your time focusing on your writing piece and taking in as much vocabulary as you can.', 'Spend 30 percent of your time focusing on your oral examination.', 'Spend 20 percent of your time practising your listening skills.', 'Spend the remaining 20 percent of your time practising your reading skills.']","[['focus_on_writing', 'focus_on_oral_exam', 'practice_listening_skills', 'practice_reading_skills']]","{'task_graph': {'nodes': [{'id': 0, 'label': 'START'}, {'id': 2, 'label': 'Spend 30 percent of your time focusing on your writing piece and taking in as much vocabulary as you can.'}, {'id': 3, 'label': 'Spend 30 percent of your time focusing on your oral examination.'}, {'id': 4, 'label': 'Spend 20 percent of your time practising your listening skills.'}, {'id': 5, 'label': 'Spend the remaining 20 percent of your time practising your reading skills.'}, {'id': 1, 'label': 'END'}], 'edges': [{'from': 0, 'to': 2}, {'from': 0, 'to': 3}, {'from': 0, 'to': 4}, {'from': 0, 'to': 5}, {'from': 2, 'to': 1}, {'from': 3, 'to': 1}, {'from': 4, 'to': 1}, {'from': 5, 'to': 1}]}}","['To revise quickly and effectively, allocate your time as follows: Spend 30% of your time on writing, using tools like thesaurus and vocabulary apps to enhance your word bank. Spend another 30% on oral examination, practicing speaking in front of a mirror or with a friend. Dedicate 20% to listening skills by engaging with podcasts, audiobooks, or videos in the target language. Finally, spend the remaining 20% on reading skills by reading articles, books, or any written material in the target language.']","def place_scented_soaps_or_deodorizers(input_1, input_2):
+    """"""
+    Mimics the action of placing scented soaps or deodorizers around your garden.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A message indicating the action has been performed.
+    """"""
+    return ""Scented soaps or deodorizers have been placed around the garden.""
+"

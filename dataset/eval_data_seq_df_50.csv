@@ -1,0 +1,665 @@
+,Scenario Name,Complexity Score,Tools,expected_tool_calls,Task Graph,gold_standard_response,codes
+0,How to work for the new tech company in town,['Education and Communication'],"['look for tech companies that are hiring', 'choose a tech company', 'send the resume', 'drive to the company', 'be at the interview', 'accept the job']","[['look_for_tech_companies_that_are_hiring', 'choose_a_tech_company', 'send_the_resume', 'drive_to_the_company', 'be_at_the_interview', 'accept_the_job']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'look for tech companies that are hiring'}, {'id': 'task_2', 'label': 'choose a tech company'}, {'id': 'task_3', 'label': 'send the resume'}, {'id': 'task_4', 'label': 'drive to the company'}, {'id': 'task_5', 'label': 'be at the interview'}, {'id': 'task_6', 'label': 'accept the job'}], 'edges': [{'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To work for the new tech company in town, first look for tech companies that are hiring. Choose a tech company from the list, send your resume, drive to the company for the interview, complete the interview, and finally, accept the job offer.']","def accept_the_job(input_1, input_2):
+    """"""
+    Simulates accepting a job offer from the tech company.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A message indicating the job acceptance.
+    """"""
+    return ""Job offer accepted at Tech Innovators Inc.""
+"
+1,How to make some fresh lemonade,['Food and Entertainment'],"['go to the car', 'drive to the store', 'walk in the store', 'go to produce', 'pick up some lemons', 'pay the cashier', 'drive back home']","[['go_to_the_car', 'drive_to_the_store', 'walk_in_the_store', 'go_to_produce', 'pick_up_some_lemons', 'pay_the_cashier', 'drive_back_home']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'go to the car'}, {'id': 'task_2', 'label': 'drive to the store'}, {'id': 'task_3', 'label': 'walk in the store'}, {'id': 'task_4', 'label': 'go to produce'}, {'id': 'task_5', 'label': 'pick up some lemons'}, {'id': 'task_6', 'label': 'pay the cashier'}, {'id': 'task_7', 'label': 'drive back home'}], 'edges': [{'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_6', 'to': 'task_7'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To make fresh lemonade, first go to your car, drive to the store, walk inside, go to the produce section, pick up some lemons, pay the cashier, and drive back home.']","def drive_back_home(input_1, input_2):
+    """"""
+    Simulates the action of driving back home.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A message indicating the action of driving back home.
+    """"""
+    return ""You have driven back home.""
+"
+2,How to have a large baby shower,['Family Life'],"['Decide on venue', 'Make list of guests', 'Send out invitations', 'Wait for replies', 'Check availability of venue', 'Book venue for shower', 'Send confirmation details to guests']","[['decide_on_venue', 'make_list_of_guests', 'send_out_invitations', 'wait_for_replies', 'check_availability_of_venue', 'book_venue_for_shower', 'send_confirmation_details_to_guests']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Decide on venue'}, {'id': 'task_2', 'label': 'Make list of guests'}, {'id': 'task_3', 'label': 'Send out invitations'}, {'id': 'task_4', 'label': 'Wait for replies'}, {'id': 'task_5', 'label': 'Check availability of venue'}, {'id': 'task_6', 'label': 'Book venue for shower'}, {'id': 'task_7', 'label': 'Send confirmation details to guests'}], 'edges': [{'from': 'task_6', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_4', 'to': 'task_7'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}, {'from': 'task_1', 'to': 'task_5'}]}}","['To have a large baby shower, first decide on a venue. The Grand Ballroom with a capacity of 200 located downtown is a good choice. Next, make a list of guests, for example, Alice, Bob, Charlie, David, and Eve. Send out invitations to these guests and wait for their replies. Check the availability of the venue, which is available on 2023-12-15. Book the venue for the shower on this date. Finally, send confirmation details to the guests who replied positively, such as Alice, Charlie, and David.']","def send_confirmation_details_to_guests(input_1, input_2):
+    """"""
+    Sends confirmation details to the guests who replied positively.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Confirmation sent to: ['Alice', 'Charlie', 'David']""
+"
+3,How to Make Mushy Peas,['Food and Entertainment'],"['Start with large peas.', 'Rinse the peas.', 'Steam until wrinkled.', 'Add melted butter, cream, salt, and pepper.', 'Mash until soft.', 'Eat immediately.']","[['start_with_large_peas', 'rinse_the_peas', 'steam_until_wrinkled', 'add_melted_butter_cream_salt_and_pepper', 'mash_until_soft', 'eat_immediately']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Start with large peas.'}, {'id': 'task_2', 'label': 'Rinse the peas.'}, {'id': 'task_3', 'label': 'Steam until wrinkled.'}, {'id': 'task_4', 'label': 'Add melted butter, cream, salt, and pepper.'}, {'id': 'task_5', 'label': 'Mash until soft.'}, {'id': 'task_6', 'label': 'Eat immediately.'}], 'edges': [{'from': 'task_4', 'to': 'task_6'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_3', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_4'}]}}","['To make mushy peas, start with 500 grams of large peas. Rinse the peas under cold water. Steam the peas for 10 minutes until they are wrinkled. Add 2 tablespoons of melted butter, 1/4 cup of cream, a pinch of salt, and a pinch of pepper to the peas. Mash the peas until they are soft and creamy. The mushy peas are now ready to be eaten immediately.']","def eat_immediately(input_1, input_2):
+    """"""
+    Mimics the action of eating the peas immediately.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A message indicating the peas are ready to be eaten immediately.
+    """"""
+    return ""Mushy peas are ready to be eaten immediately.""
+"
+4,How to see the park,['Others'],"['get dressed and put on shoes', 'grab house keys', 'lock up the house and head out', 'walk to the park', 'arrive at the park']","[['get_dressed_and_put_on_shoes', 'grab_house_keys', 'lock_up_the_house_and_head_out', 'walk_to_the_park', 'arrive_at_the_park']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'get dressed and put on shoes'}, {'id': 'task_2', 'label': 'grab house keys'}, {'id': 'task_3', 'label': 'lock up the house and head out'}, {'id': 'task_4', 'label': 'walk to the park'}, {'id': 'task_5', 'label': 'arrive at the park'}], 'edges': [{'from': 'task_3', 'to': 'task_4'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_2', 'to': 'task_3'}]}}","['To see the park, follow these steps: First, get dressed and put on your shoes. Next, grab your house keys. Then, lock up the house and head out. Walk to the park, and finally, you will arrive at the park.']","def arrive_at_the_park(input_1, input_2):
+    """"""
+    Simulates the action of arriving at the park.
+
+    Args:
+        input_1(str): Description of the park.
+        input_2 (bool): Indicates whether the park is crowded or not.
+
+    Returns:
+        str: Confirmation message that the user has arrived at the park.
+    """"""
+    return ""You have arrived at the park.""
+"
+5,How to Make a Pear Martini,['Food and Entertainment'],"['Add ice to a cocktail shaker.', 'Add the vodka and pear liqueur to the cocktail shaker.', 'Stir the ingredients in the cocktail shaker with a bar spoon for five to ten seconds.', 'Strain into a cocktail glass.', 'Garnish with a pear slice.', 'Serve the drink.']","[['add_ice_to_shaker', 'add_vodka_and_liqueur', 'stir_ingredients', 'strain_into_glass', 'garnish_with_pear_slice', 'serve_drink']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Add ice to a cocktail shaker.'}, {'id': 'task_2', 'label': 'Add the vodka and pear liqueur to the cocktail shaker.'}, {'id': 'task_3', 'label': 'Stir the ingredients in the cocktail shaker with a bar spoon for five to ten seconds.'}, {'id': 'task_4', 'label': 'Strain into a cocktail glass.'}, {'id': 'task_5', 'label': 'Garnish with a pear slice.'}, {'id': 'task_6', 'label': 'Serve the drink.'}], 'edges': [{'from': 'task_4', 'to': 'task_5'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_3', 'to': 'task_4'}, {'from': 'task_5', 'to': 'task_6'}]}}","['To make a Pear Martini, first add ice to a cocktail shaker. Then, add vodka and pear liqueur to the shaker. Stir the ingredients with a bar spoon for five to ten seconds. Strain the mixture into a cocktail glass. Garnish with a pear slice and serve the drink.']","def serve_drink(input_1, input_2):
+    """"""
+    Mimics the action of serving the drink.
+
+    Args:
+        input_1(str): Description of the serving method.
+        input_2 (bool): Whether the drink is ready to be served.
+
+    Returns:
+        str: Confirmation message that the drink has been served.
+    """"""
+    return ""Drink served.""
+"
+6,How to Play Strip Twister,['Food and Entertainment'],"['Divide into teams.', 'Prepare to play.', 'Play the game.', 'Win the game.']","[['divide_into_teams', 'prepare_to_play', 'play_the_game', 'win_the_game']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Divide into teams.'}, {'id': 'task_2', 'label': 'Prepare to play.'}, {'id': 'task_3', 'label': 'Play the game.'}, {'id': 'task_4', 'label': 'Win the game.'}], 'edges': [{'from': 'task_2', 'to': 'task_1'}, {'from': 'task_1', 'to': 'task_3'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To play Strip Twister, first divide the participants into teams. Then, prepare the game by setting up the Twister mat on a flat surface and explaining the rules. During the game, players take turns spinning the spinner and placing their hands and feet on the corresponding color circles. The last player standing wins the game.']","def win_the_game(input_1, input_2):
+    """"""
+    Determines the winner of the game.
+
+    Args:
+        input_1(str): The final state of the game.
+        input_2 (bool): Whether to include a detailed summary.
+
+    Returns:
+        str: A string announcing the winner.
+    """"""
+    winner = ""Alice is the last player standing and wins the game!""
+    return winner
+"
+7,How to Write Introductions,['Education and Communication'],"['Establish your topic by using a clear, concise statement.', 'Include your main points to give your readers guidance.', 'Place your main ideas at the end of your introduction.']","[['establish_topic_statement', 'include_main_points', 'place_main_ideas_at_end']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Establish your topic by using a clear, concise statement.'}, {'id': 'task_2', 'label': 'Include your main points to give your readers guidance.'}, {'id': 'task_3', 'label': 'Place your main ideas at the end of your introduction.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}]}}","[""To write an effective introduction, start with a clear and concise statement such as 'The importance of writing effective introductions in essays and articles.' Next, include main points to guide your readers: '1. Capture the reader's attention. 2. Provide background information. 3. State the thesis or main idea.' Finally, place your main ideas at the end of your introduction: 'In conclusion, an effective introduction should capture attention, provide necessary background, and clearly state the main idea.'""]","def place_main_ideas_at_end(input_1, input_2):
+    """"""
+    Places the main ideas at the end of the introduction.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A statement placing the main ideas at the end of the introduction.
+    """"""
+    return ""In conclusion, an effective introduction should capture attention, provide necessary background, and clearly state the main idea.""
+"
+8,How to take a vacation this year,['Food and Entertainment'],"['Save up money for vacation', 'Research vacation spots', 'Choose a vacation spot', 'Choose a time to take off work', 'Request time off of work']","[['save_up_money_for_vacation', 'research_vacation_spots', 'choose_a_vacation_spot', 'choose_a_time_to_take_off_work', 'request_time_off_of_work']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Save up money for vacation'}, {'id': 'task_2', 'label': 'Research vacation spots'}, {'id': 'task_3', 'label': 'Choose a vacation spot'}, {'id': 'task_4', 'label': 'Choose a time to take off work'}, {'id': 'task_5', 'label': 'Request time off of work'}], 'edges': [{'from': 'task_3', 'to': 'task_4'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_1', 'to': 'task_2'}]}}","['To take a vacation this year, you should start by saving up money. You can save $500 monthly for 12 months to accumulate $6000. Next, research potential vacation spots such as Hawaii, Paris, Tokyo, and New York. Choose a destination, for example, Hawaii. Then, decide on a time to take off work, such as June 15 - June 30. Finally, request time off from work and get it approved. Your time off request for June 15 - June 30 has been approved.']","def request_time_off_of_work(input_1, input_2):
+    """"""
+    Simulates requesting time off of work by returning a confirmation message.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A confirmation message for the time off request.
+    """"""
+    return ""Time off request for June 15 - June 30 has been approved.""
+"
+9,How to fry some Oreos,['Food and Entertainment'],"['go to the store', 'walk inside the store', 'find the Oreo section', ""grab a bag of Oreo's"", 'head to the checkout', 'pay at the register']","[['go_to_the_store', 'walk_inside_the_store', 'find_the_oreo_section', 'grab_a_bag_of_oreos', 'head_to_the_checkout', 'pay_at_the_register']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'go to the store'}, {'id': 'task_2', 'label': 'walk inside the store'}, {'id': 'task_3', 'label': 'find the Oreo section'}, {'id': 'task_4', 'label': ""grab a bag of Oreo's""}, {'id': 'task_5', 'label': 'head to the checkout'}, {'id': 'task_6', 'label': 'pay at the register'}], 'edges': [{'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To fry some Oreos, first go to the store located at 123 Main St. Once inside, find the Oreo section in aisle 5 and grab a bag of Original Oreos. Head to the checkout counter and pay $3.99 at the register using a credit card.']","def pay_at_the_register(payment_method, has_discount):
+    """"""
+    Simulates paying at the register.
+
+    Args:
+        payment_method (str): The method of payment.
+        has_discount (bool): Whether there is a discount or not.
+
+    Returns:
+        str: A confirmation message of completing the payment.
+    """"""
+    return ""Paid $3.99 at the register using a credit card.""
+"
+10,How to get in the car,['Others'],"['approach the car', 'take out the key to the car', 'unlock the car door', 'grab onto the car door handle', 'pull the handle forward to open the door', ""bend down to sit in vehicle's seat"", 'close car door']","[['approach_the_car', 'take_out_the_key_to_the_car', 'unlock_the_car_door', 'grab_onto_the_car_door_handle', 'pull_the_handle_forward_to_open_the_door', 'bend_down_to_sit_in_vehicles_seat', 'close_car_door']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'approach the car'}, {'id': 'task_2', 'label': 'take out the key to the car'}, {'id': 'task_3', 'label': 'unlock the car door'}, {'id': 'task_4', 'label': 'grab onto the car door handle'}, {'id': 'task_5', 'label': 'pull the handle forward to open the door'}, {'id': 'task_6', 'label': ""bend down to sit in vehicle's seat""}, {'id': 'task_7', 'label': 'close car door'}], 'edges': [{'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_6', 'to': 'task_7'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","[""To get in the car, follow these steps: Approach the car, take out the key to the car, unlock the car door, grab onto the car door handle, pull the handle forward to open the door, bend down to sit in the vehicle's seat, and finally, close the car door.""]","def close_car_door(input_1, input_2):
+    """"""
+    Simulates the action of closing the car door.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A message indicating the car door has been closed.
+    """"""
+    return ""The car door is now closed.""
+"
+11,How to Play Funk Bass,['Education and Communication'],"['Practice with a drummer, backing track, or metronome.', 'Make sure that you always hit a big note on the one.', 'Hit the one and the three in each bar to build a basic groove.', 'Fill in the gaps between the one and three to build out your lick.']","[['practice_with_drummer', 'hit_big_note_on_one', 'hit_one_and_three', 'fill_gaps_between_one_and_three']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Practice with a drummer, backing track, or metronome.'}, {'id': 'task_2', 'label': 'Make sure that you always hit a big note on the one.'}, {'id': 'task_3', 'label': 'Hit the one and the three in each bar to build a basic groove.'}, {'id': 'task_4', 'label': 'Fill in the gaps between the one and three to build out your lick.'}], 'edges': [{'from': 'task_4', 'to': 'task_1'}, {'from': 'task_2', 'to': 'task_1'}, {'from': 'task_3', 'to': 'task_4'}, {'from': 'task_3', 'to': 'task_2'}]}}","['To play funk bass, start by practicing with a drummer, backing track, or metronome. Ensure you always hit a big note on the one. Hit the one and the three in each bar to build a basic groove. Finally, fill in the gaps between the one and three to build out your lick.']","def fill_gaps_between_one_and_three(input_1, input_2):
+    """"""
+    Fills in the gaps between the one and three to build out a lick.
+
+    Args:
+        input_1(str): The notes to fill in the gaps.
+        input_2 (bool): Whether the fill is complex.
+
+    Returns:
+        str: Description of the fill between the one and three.
+    """"""
+    return ""Filled gaps between the one and three with syncopated notes and rhythmic variations.""
+"
+12,How to Clean Chicken Livers,['Food and Entertainment'],"['Lay out the livers.', 'Look for connective tissue.', 'Trim the meat away from the connective tissue.']","[['lay_out_livers', 'look_for_connective_tissue', 'trim_meat_away_from_connective_tissue']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Lay out the livers.'}, {'id': 'task_2', 'label': 'Look for connective tissue.'}, {'id': 'task_3', 'label': 'Trim the meat away from the connective tissue.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}]}}","['To clean chicken livers, first lay them out on a clean surface. Next, look for any white, stringy connective tissue. Finally, trim the meat away from the connective tissue to leave clean liver pieces.']","def trim_meat_away_from_connective_tissue(input_1, input_2):
+    """"""
+    Mimics the process of trimming meat away from the connective tissue in chicken livers.
+
+    Args:
+        input_1(str): Description of the first input parameter.
+        input_2 (bool): Description of the second input parameter.
+
+    Returns:
+        str: A detailed description of the trimmed meat.
+    """"""
+    return ""Meat has been trimmed away from the connective tissue, leaving clean liver pieces.""
+"
+13,How to Clean a Limestone Fireplace,['Home and Garden'],"['Place towels at the foot of the fireplace.', 'Vacuum the fireplace.', 'Wipe the fireplace down with dry, microfiber cloth.']","[['place_towels_at_foot_of_fireplace', 'vacuum_fireplace', 'wipe_fireplace_with_microfiber_cloth']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Place towels at the foot of the fireplace.'}, {'id': 'task_2', 'label': 'Vacuum the fireplace.'}, {'id': 'task_3', 'label': 'Wipe the fireplace down with dry, microfiber cloth.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}]}}","['To clean a limestone fireplace, first place towels at the foot of the fireplace. Then, vacuum the fireplace to remove loose dirt and debris. Finally, wipe the fireplace down with a dry, microfiber cloth to ensure it is clean.']","def wipe_fireplace_with_microfiber_cloth(input_1, input_2):
+    """"""
+    Mimics wiping the fireplace down with a dry, microfiber cloth.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Confirmation message that the fireplace has been wiped down with a dry, microfiber cloth.
+    """"""
+    return ""The fireplace has been wiped down with a dry, microfiber cloth.""
+"
+14,How to Make Your CV Sound More Impressive,['Education and Communication'],"['Tailor the resume to the job.', 'Break the resume into subsections.', 'Prioritize key information.']","[['tailor_resume_to_job', 'break_resume_into_subsections', 'prioritize_key_information']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Tailor the resume to the job.'}, {'id': 'task_2', 'label': 'Break the resume into subsections.'}, {'id': 'task_3', 'label': 'Prioritize key information.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_3', 'to': 'task_1'}]}}","['To make your CV sound more impressive, start by tailoring it to the job description, highlighting relevant skills and experiences. Break your resume into clear subsections such as Experience, Education, Skills, and Achievements. Finally, prioritize key information to make it stand out to potential employers.']","def prioritize_key_information(input_1, input_2):
+    """"""
+    Prioritizes key information in the resume to make it stand out to potential employers.
+
+    Args:
+        input_1(str): The full resume text.
+        input_2 (bool): Whether to highlight achievements.
+
+    Returns:
+        str: The resume with key information prioritized.
+    """"""
+    return ""Name: John Doe\nSummary: Experienced Software Developer with a strong background in Python and Java. Proven track record of developing scalable applications.\nExperience:\n- Software Developer at XYZ Corp (2018-2023)\n- Junior Developer at ABC Inc (2015-2018)\nEducation:\n- B.Sc. in Computer Science from University of Somewhere (2011-2015)\nSkills:\n- Python, Java, SQL\nAchievements:\n- Developed a scalable web application that increased user engagement by 30%\n""
+"
+15,How to go to prom,['Food and Entertainment'],"['find a nice suit', 'purchase nice suit', 'find where date is', 'figure out where event is', 'get in car to event', 'use map to get to event']","[['find_nice_suit', 'purchase_nice_suit', 'find_where_date_is', 'figure_out_where_event_is', 'get_in_car_to_event', 'use_map_to_get_to_event']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'find a nice suit'}, {'id': 'task_2', 'label': 'purchase nice suit'}, {'id': 'task_3', 'label': 'find where date is'}, {'id': 'task_4', 'label': 'figure out where event is'}, {'id': 'task_5', 'label': 'get in car to event'}, {'id': 'task_6', 'label': 'use map to get to event'}], 'edges': [{'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","[""To go to prom, first find a nice suit: 'Brand: Armani, Color: Black, Size: 42R, Price: $1200'. Then purchase the suit: 'Purchase confirmed: Armani Black Suit, Size: 42R, Price: $1200, Order ID: 123456789'. Find where your date is: 'Location: 123 Maple Street, Springfield'. Figure out where the event is: 'Event Location: Springfield High School Gymnasium, 456 Elm Street, Springfield'. Get in the car to the event: 'In car: Heading to Springfield High School Gymnasium'. Finally, use the map to get to the event: 'Directions: Head north on Maple Street, turn right onto Elm Street, destination will be on the left.'""]","def use_map_to_get_to_event(input_1, input_2):
+    """"""
+    Simulates using a map to get to the event by returning synthetic navigation directions.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Synthetic navigation directions to the event.
+    """"""
+    return ""Directions: Head north on Maple Street, turn right onto Elm Street, destination will be on the left.""
+"
+16,How to get into better shape,['Health'],"['go to google', 'search for a gym', 'go to the sign up page', 'sign up for the gym', 'pay the fee', 'go to the gym most days']","[['go_to_google', 'search_for_a_gym', 'go_to_the_sign_up_page', 'sign_up_for_the_gym', 'pay_the_fee', 'go_to_the_gym_most_days']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'go to google'}, {'id': 'task_2', 'label': 'search for a gym'}, {'id': 'task_3', 'label': 'go to the sign up page'}, {'id': 'task_4', 'label': 'sign up for the gym'}, {'id': 'task_5', 'label': 'pay the fee'}, {'id': 'task_6', 'label': 'go to the gym most days'}], 'edges': [{'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To get into better shape, you should start by accessing Google and searching for a gym. Once you find a suitable gym, go to their sign-up page and complete the registration process. After signing up, pay the membership fee and make a commitment to go to the gym most days.']","def go_to_the_gym_most_days(input_1, input_2):
+    """"""
+    Simulates going to the gym most days.
+
+    Args:
+        input_1(str): The user's schedule or preferred workout times.
+        input_2 (bool): A flag indicating whether to set reminders for gym visits.
+
+    Returns:
+        str: A confirmation message indicating a regular gym attendance schedule.
+    """"""
+    return ""Regularly attending the gym most days""
+"
+17,How to Thumb Wrestle,['Others'],"['Prepare the wrestling position.', 'Have the thumbs bow.', 'Begin the wrestle.', 'Pin down the thumb.']","[['prepare_wrestling_position', 'have_thumbs_bow', 'begin_the_wrestle', 'pin_down_the_thumb']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Prepare the wrestling position.'}, {'id': 'task_2', 'label': 'Have the thumbs bow.'}, {'id': 'task_3', 'label': 'Begin the wrestle.'}, {'id': 'task_4', 'label': 'Pin down the thumb.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_3', 'to': 'task_4'}]}}","[""To thumb wrestle, first prepare the wrestling position: Both participants face each other, elbows on the table, hands clasped. Next, have the thumbs bow to each other, signaling respect and readiness. Then, begin the wrestle: Thumbs start moving, trying to pin the opponent's thumb. Finally, pin down the thumb: One participant successfully pins the opponent's thumb for the count of three.""]","def pin_down_the_thumb(input_1, input_2):
+    """"""
+    Simulates pinning down the opponent's thumb.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Thumb pinned: One participant successfully pins the opponent's thumb for the count of three.""
+"
+18,How to buy a computer game,['Food and Entertainment'],"['Look at the computers games available.', 'Choose a game that looks interesting.', 'Take the game off of the shelf.', 'Take the game to the cashier.', 'Place the game on the counter.']","[['look_at_computer_games', 'choose_interesting_game', 'take_game_off_shelf', 'take_game_to_cashier', 'place_game_on_counter']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Look at the computers games available.'}, {'id': 'task_2', 'label': 'Choose a game that looks interesting.'}, {'id': 'task_3', 'label': 'Take the game off of the shelf.'}, {'id': 'task_4', 'label': 'Take the game to the cashier.'}, {'id': 'task_5', 'label': 'Place the game on the counter.'}], 'edges': [{'from': 'task_3', 'to': 'task_4'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_2', 'to': 'task_3'}]}}","[""To buy a computer game, first look at the available computer games. Choose a game that looks interesting, such as 'The Witcher 3'. Take the game off the shelf and bring it to the cashier. Finally, place the game on the counter for purchase.""]","def place_game_on_counter(input_1, input_2):
+    """"""
+    Simulates placing the game on the counter for purchase.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Confirmation message that the game has been placed on the counter.
+    """"""
+    return ""The game 'The Witcher 3' has been placed on the counter.""
+"
+19,How to Draw 3D Letters,['Education and Communication'],"['Draw the stick figure of the letter W bubble letter.', 'Add the outline sketches for the bubble letter and fill in the basic color.', 'Add the highlight and shadows for the 3D effect.']","[['draw_stick_figure_letter_w', 'add_outline_and_color', 'add_highlight_and_shadows']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Draw the stick figure of the letter W bubble letter.'}, {'id': 'task_2', 'label': 'Add the outline sketches for the bubble letter and fill in the basic color.'}, {'id': 'task_3', 'label': 'Add the highlight and shadows for the 3D effect.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}]}}","['To draw 3D letters, start by drawing the stick figure of the letter W in bubble letter style. Next, add the outline sketches and fill in the basic color. Finally, add highlights and shadows for the 3D effect.']","def add_highlight_and_shadows(input_1, input_2):
+    """"""
+    Adds the highlight and shadows for the 3D effect.
+
+    Args:
+        input_1(str): Description of the letter to be highlighted and shaded.
+        input_2 (bool): Whether to include additional details.
+
+    Returns:
+        str: A string representation of the bubble letter with highlights and shadows for 3D effect.
+    """"""
+    return '  W  \n/  \ \n|    |\n|    |\n \__/\nColor: Blue\nHighlights: Top left\nShadows: Bottom right'
+"
+20,How to Make a Roux,['Food and Entertainment'],"['Choose the fat you want to use.', 'Heat the fat in a skillet.', 'Add the flour.', 'Cook the roux.', 'Remove the roux from heat.', 'Store the roux.']","[['choose_fat', 'heat_fat', 'add_flour', 'cook_roux', 'remove_roux_from_heat', 'store_roux']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Choose the fat you want to use.'}, {'id': 'task_2', 'label': 'Heat the fat in a skillet.'}, {'id': 'task_3', 'label': 'Add the flour.'}, {'id': 'task_4', 'label': 'Cook the roux.'}, {'id': 'task_5', 'label': 'Remove the roux from heat.'}, {'id': 'task_6', 'label': 'Store the roux.'}], 'edges': [{'from': 'task_4', 'to': 'task_5'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_3', 'to': 'task_4'}, {'from': 'task_5', 'to': 'task_6'}]}}","['To make a roux, first choose the fat you want to use, such as butter. Heat the butter in a skillet until it is melted. Then, add flour to the heated butter. Cook the mixture until it turns a golden brown color. Remove the roux from the heat and store it in an airtight container for future use.']","def store_roux(input_1, input_2):
+    """"""
+    Stores the prepared roux for future use.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A message indicating the roux has been stored.
+    """"""
+    return ""The roux is stored in an airtight container.""
+"
+21,How to make potato soup,['Food and Entertainment'],"['find the recipe online', 'read the recipe', 'gather the ingredients', 'put together the ingredients', 'cook up the meal']","[['find_recipe_online', 'read_recipe', 'gather_ingredients', 'put_together_ingredients', 'cook_up_meal']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'find the recipe online'}, {'id': 'task_2', 'label': 'read the recipe'}, {'id': 'task_3', 'label': 'gather the ingredients'}, {'id': 'task_4', 'label': 'put together the ingredients'}, {'id': 'task_5', 'label': 'cook up the meal'}], 'edges': [{'from': 'task_3', 'to': 'task_4'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_2', 'to': 'task_3'}]}}","['To make potato soup, follow these steps: First, find a recipe online. Next, read the recipe to understand the ingredients and instructions. Gather all the ingredients: 4 potatoes, 1 onion, 2 cloves garlic, 4 cups chicken broth, 1 cup heavy cream, salt, and pepper. Prepare the ingredients by peeling and chopping the potatoes, chopping the onion, and mincing the garlic. Finally, cook the meal by sautéing the onion and garlic, adding the potatoes and broth, simmering until tender, blending the soup, and stirring in the cream, salt, and pepper.']","def cook_up_meal(preparation_list):
+    """"""
+    Provides cooking instructions based on the preparation list.
+
+    Args:
+        preparation_list (str): A preparation list of the ingredients.
+
+    Returns:
+        str: Step-by-step cooking instructions.
+    """"""
+    return ""1. In a pot, sauté the chopped onion and minced garlic until fragrant. 2. Add the chopped potatoes and chicken broth. 3. Bring to a boil, then simmer until potatoes are tender. 4. Blend the soup until smooth. 5. Stir in the heavy cream, salt, and pepper to taste.""
+"
+22,How to do a handstand,['Health'],"['stretch thoroughly, especially arms and legs', 'stand with legs apart', 'bend upper body forward', 'keep arms straight and touch palms to floor', 'kick one leg forward', 'straighten legs to point to ceiling']","[['stretch_thoroughly', 'stand_with_legs_apart', 'bend_upper_body_forward', 'keep_arms_straight_and_touch_palms_to_floor', 'kick_one_leg_forward', 'straighten_legs_to_point_to_ceiling']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'stretch thoroughly, especially arms and legs'}, {'id': 'task_2', 'label': 'stand with legs apart'}, {'id': 'task_3', 'label': 'bend upper body forward'}, {'id': 'task_4', 'label': 'keep arms straight and touch palms to floor'}, {'id': 'task_5', 'label': 'kick one leg forward'}, {'id': 'task_6', 'label': 'straighten legs to point to ceiling'}], 'edges': [{'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To do a handstand, start by stretching thoroughly, especially your arms and legs. Stand with your legs apart and bend your upper body forward. Keep your arms straight and touch your palms to the floor. Kick one leg forward and then straighten your legs to point to the ceiling.']","def straighten_legs_to_point_to_ceiling(input_1, input_2):
+    """"""
+    Mimics the action of straightening legs to point to the ceiling.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A detailed description of straightening legs to point to the ceiling.
+    """"""
+    return ""While in a handstand position, straighten your legs and point them towards the ceiling.""
+"
+23,How to Make an Octagon,['Education and Communication'],"['Determine the side length of your octagon.', 'Use a ruler to draw a line of the length you decided upon.', 'Using a protractor, mark an angle 135 relative to your line.', 'Continue creating lines at 135 angles to the last line.']","[['determine_side_length', 'draw_line', 'mark_angle', 'create_lines']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Determine the side length of your octagon.'}, {'id': 'task_2', 'label': 'Use a ruler to draw a line of the length you decided upon.'}, {'id': 'task_3', 'label': 'Using a protractor, mark an angle 135 relative to your line.'}, {'id': 'task_4', 'label': 'Continue creating lines at 135 angles to the last line.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To make an octagon, first determine the side length of your octagon. Then, use a ruler to draw a line of the length you decided upon. Next, using a protractor, mark an angle of 135 degrees relative to your line. Continue creating lines at 135-degree angles to the last line until you complete the octagon.']","import random
+
+
+def create_lines(input_1, input_2):
+    """"""
+    Continues creating lines at 135-degree angles to the last line.
+
+    Args:
+        input_1 (str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A description of the process of creating lines at 135-degree angles.
+    """"""
+    return ""Continued creating lines at 135-degree angles to the last line""
+"
+24,How to Make Mutton and Lotus Stem Curry,['Food and Entertainment'],"['Clean and wash the mutton under running water.', 'Place the mutton pieces in a large frying pan.', 'Add turmeric powder to the mixture.']","[['clean_and_wash_mutton', 'place_mutton_in_pan', 'add_turmeric_powder']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Clean and wash the mutton under running water.'}, {'id': 'task_2', 'label': 'Place the mutton pieces in a large frying pan.'}, {'id': 'task_3', 'label': 'Add turmeric powder to the mixture.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}]}}","['To make Mutton and Lotus Stem Curry, first clean and wash the mutton under running water. Then, place the mutton pieces in a large frying pan. Finally, add turmeric powder to the mixture.']","def add_turmeric_powder(input_1, input_2):
+    """"""
+    Simulates adding turmeric powder to the mixture.
+
+    Args:
+        input_1(str): Description of the mixture.
+        input_2 (bool): Indicator if the turmeric powder is fresh.
+
+    Returns:
+        str: A confirmation message that turmeric powder has been added to the mixture.
+    """"""
+    return ""Turmeric powder has been added to the mixture.""
+"
+25,How to go to the grocery store for some groceries,['Food and Entertainment'],"['Create a shopping list', 'Drive to the store', 'Walk around the store', 'Put groceries in cart', 'Pay for the groceries', 'Pack groceries in a bag', 'Drive home with groceries']","[['create_shopping_list', 'drive_to_store', 'walk_around_store', 'put_groceries_in_cart', 'pay_for_groceries', 'pack_groceries_in_bag', 'drive_home_with_groceries']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Create a shopping list'}, {'id': 'task_2', 'label': 'Drive to the store'}, {'id': 'task_3', 'label': 'Walk around the store'}, {'id': 'task_4', 'label': 'Put groceries in cart'}, {'id': 'task_5', 'label': 'Pay for the groceries'}, {'id': 'task_6', 'label': 'Pack groceries in a bag'}, {'id': 'task_7', 'label': 'Drive home with groceries'}], 'edges': [{'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_6', 'to': 'task_7'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To go to the grocery store for some groceries, first create a shopping list. Then, drive to the store and walk around to find the items. Put the groceries in your cart, pay for them, and pack them in bags. Finally, drive home with the groceries.']","def drive_home_with_groceries(input_1, input_2):
+    """"""
+    Simulates driving home with groceries and returns a confirmation message.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A confirmation message indicating arrival at home.
+    """"""
+    return ""Arrived home with groceries""
+"
+26,How to dress as witches,['Food and Entertainment'],"['get in the car', 'drive to a Halloween store', 'browse the witch gear section', 'pick an outfit', 'walk to the register', 'pay for the outfit', 'drive back home']","[['get_in_the_car', 'drive_to_a_halloween_store', 'browse_the_witch_gear_section', 'pick_an_outfit', 'walk_to_the_register', 'pay_for_the_outfit', 'drive_back_home']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'get in the car'}, {'id': 'task_2', 'label': 'drive to a Halloween store'}, {'id': 'task_3', 'label': 'browse the witch gear section'}, {'id': 'task_4', 'label': 'pick an outfit'}, {'id': 'task_5', 'label': 'walk to the register'}, {'id': 'task_6', 'label': 'pay for the outfit'}, {'id': 'task_7', 'label': 'drive back home'}], 'edges': [{'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_6', 'to': 'task_7'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To dress as witches, follow these steps: Get in the car, drive to a Halloween store, browse the witch gear section, pick a Witch Robe and a Witch Hat, walk to the register, pay for the outfit, and drive back home.']","def drive_back_home(input_1, input_2):
+    """"""
+    Simulates driving back home.
+
+    Args:
+        input_1(str): The destination.
+        input_2 (bool): Whether the car has enough fuel.
+
+    Returns:
+        str: Confirmation message of arriving back home.
+    """"""
+    return ""You have arrived back home.""
+"
+27,How to go to new york,['Others'],"['Turn on the computer', 'purchase a plane ticket', 'pack a suitcase', 'drive to the airport', 'find a parking spot', 'go thru security', 'check baggage at the gate']","[['turn_on_computer', 'purchase_plane_ticket', 'pack_suitcase', 'drive_to_airport', 'find_parking_spot', 'go_thru_security', 'check_baggage_at_gate']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Turn on the computer'}, {'id': 'task_2', 'label': 'purchase a plane ticket'}, {'id': 'task_3', 'label': 'pack a suitcase'}, {'id': 'task_4', 'label': 'drive to the airport'}, {'id': 'task_5', 'label': 'find a parking spot'}, {'id': 'task_6', 'label': 'go thru security'}, {'id': 'task_7', 'label': 'check baggage at the gate'}], 'edges': [{'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_6', 'to': 'task_7'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To go to New York, first turn on your computer. Then, purchase a plane ticket to New York. Pack your suitcase with necessary items. Drive to the airport and find a parking spot. Go through security and check your baggage at the gate.']","def check_baggage_at_gate(input_1, input_2):
+    """"""
+    Simulates checking baggage at the gate.
+
+    Args:
+        input_1(str): Description of the baggage.
+        input_2 (bool): Whether the baggage is checked or not.
+
+    Returns:
+        str: Confirmation message that the baggage is checked.
+    """"""
+    return ""Baggage checked at the gate.""
+"
+28,How to Make a Den for a Mother Dog and Her Puppies,['Family Life'],"['Drape a blanket over the den.', 'Provide plenty of materials for a nest.', 'Place pillows and blankets inside the den.']","[['drape_blanket_over_den', 'provide_nest_materials', 'place_pillows_and_blankets']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Drape a blanket over the den.'}, {'id': 'task_2', 'label': 'Provide plenty of materials for a nest.'}, {'id': 'task_3', 'label': 'Place pillows and blankets inside the den.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_3', 'to': 'task_1'}]}}","['To make a den for a mother dog and her puppies, first drape a blanket over the den to provide warmth and comfort. Next, provide plenty of materials for a nest, such as shredded paper, soft cloth, straw, and old towels. Finally, place pillows and blankets inside the den to ensure a cozy environment.']","def place_pillows_and_blankets(input_1, input_2):
+    """"""
+    Mimics the action of placing pillows and blankets inside the den.
+
+    Args:
+        input_1(str): Description of the den's interior.
+        input_2 (bool): Whether the pillows and blankets fit well.
+
+    Returns:
+        str: Confirmation message that pillows and blankets have been placed inside the den.
+    """"""
+    return ""Pillows and blankets have been placed inside the den, ensuring a cozy environment.""
+"
+29,How to do a mac & cheese,['Food and Entertainment'],"['drive to the store', 'buy mac and cheese', 'drive back home', 'boil pot of water', 'boil macaroni noodles', 'drain macaroni noodles', 'add cheese and stir']","[['drive_to_the_store', 'buy_mac_and_cheese', 'drive_back_home', 'boil_pot_of_water', 'boil_macaroni_noodles', 'drain_macaroni_noodles', 'add_cheese_and_stir']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'drive to the store'}, {'id': 'task_2', 'label': 'buy mac and cheese'}, {'id': 'task_3', 'label': 'drive back home'}, {'id': 'task_4', 'label': 'boil pot of water'}, {'id': 'task_5', 'label': 'boil macaroni noodles'}, {'id': 'task_6', 'label': 'drain macaroni noodles'}, {'id': 'task_7', 'label': 'add cheese and stir'}], 'edges': [{'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_6', 'to': 'task_7'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To make mac & cheese, follow these steps: Drive to the store, buy mac and cheese, drive back home, boil a pot of water, boil the macaroni noodles, drain the noodles, and finally add cheese and stir.']","def add_cheese_and_stir(input_1, input_2):
+    """"""
+    Simulates adding cheese to the macaroni and stirring, then returns a status message.
+
+    Args:
+        input_1(str): The type of cheese.
+        input_2 (bool): Whether the noodles are drained.
+
+    Returns:
+        str: A status message indicating the mac and cheese is ready.
+    """"""
+    return ""Mac and cheese is ready.""
+"
+30,How to learn to brew beer,['Food and Entertainment'],"['Research beer-making process on YouTube.', 'Order beer-making supplies from Amazon.', 'Wait for items to arrive.', 'Unpack and setup brewing equipment.', 'Follow beer recipe and add all ingredients.', 'Allow beer to ferment.', 'Bottle final product once brewed.']","[['research_beer_making_process_on_youtube', 'order_beer_making_supplies_from_amazon', 'wait_for_items_to_arrive', 'unpack_and_setup_brewing_equipment', 'follow_beer_recipe_and_add_all_ingredients', 'allow_beer_to_ferment', 'bottle_final_product_once_brewed']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Research beer-making process on YouTube.'}, {'id': 'task_2', 'label': 'Order beer-making supplies from Amazon.'}, {'id': 'task_3', 'label': 'Wait for items to arrive.'}, {'id': 'task_4', 'label': 'Unpack and setup brewing equipment.'}, {'id': 'task_5', 'label': 'Follow beer recipe and add all ingredients.'}, {'id': 'task_6', 'label': 'Allow beer to ferment.'}, {'id': 'task_7', 'label': 'Bottle final product once brewed.'}], 'edges': [{'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_6', 'to': 'task_7'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To learn how to brew beer, start by researching the beer-making process on YouTube. Then, order the necessary beer-making supplies from Amazon. Wait for the items to arrive, which typically takes 3-5 business days. Once you have the supplies, unpack and set up the brewing equipment following a checklist. Follow a beer recipe by adding all the ingredients in the specified steps. Allow the beer to ferment for 2-3 weeks. Finally, bottle the brewed beer using a bottling checklist.']","def bottle_final_product_once_brewed(input_1, input_2):
+    """"""
+    Simulates bottling the final product once brewed by returning a checklist of bottling steps.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A JSON string containing a checklist of steps to bottle the brewed beer.
+    """"""
+    import json
+    data = [
+        ""Sanitize bottles"",
+        ""Transfer beer to bottling bucket"",
+        ""Fill bottles with beer"",
+        ""Cap the bottles""
+    ]
+    return json.dumps(data)
+"
+31,How to Make Chili Sauce,['Food and Entertainment'],"['Put all of the ingredients into a saucepan.', 'Turn the burner to medium and bring the sauce to a simmer.', 'Simmer the uncovered sauce for 20 minutes.', 'Cool the sauce to room temperature.']","[['put_ingredients_into_saucepan', 'turn_burner_to_medium', 'simmer_sauce', 'cool_sauce_to_room_temperature']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Put all of the ingredients into a saucepan.'}, {'id': 'task_2', 'label': 'Turn the burner to medium and bring the sauce to a simmer.'}, {'id': 'task_3', 'label': 'Simmer the uncovered sauce for 20 minutes.'}, {'id': 'task_4', 'label': 'Cool the sauce to room temperature.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To make chili sauce, first, put all of the ingredients into a saucepan. Then, turn the burner to medium and bring the sauce to a simmer. Simmer the uncovered sauce for 20 minutes. Finally, cool the sauce to room temperature.']","def cool_sauce_to_room_temperature(input_1, input_2):
+    """"""
+    Mimics the action of cooling the sauce to room temperature.
+
+    Args:
+        input_1(str): Description of the sauce.
+        input_2 (bool): Indicator if the sauce is cooling.
+
+    Returns:
+        str: Confirmation message that the sauce is cooled to room temperature.
+    """"""
+    return ""The sauce is cooled to room temperature.""
+"
+32,How to deposit money into a savings account,['Others'],"['Walk into the bank', 'Open up a savings account', 'Sign the account paperwork', 'Give money to the clerk to be deposited', 'Wait for the teller to run the deposit']","[['walk_into_bank', 'open_savings_account', 'sign_account_paperwork', 'give_money_to_clerk', 'wait_for_teller']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Walk into the bank'}, {'id': 'task_2', 'label': 'Open up a savings account'}, {'id': 'task_3', 'label': 'Sign the account paperwork'}, {'id': 'task_4', 'label': 'Give money to the clerk to be deposited'}, {'id': 'task_5', 'label': 'Wait for the teller to run the deposit'}], 'edges': [{'from': 'task_3', 'to': 'task_4'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_2', 'to': 'task_3'}]}}","['To deposit money into a savings account, follow these steps: First, walk into the bank and you will be greeted. Next, open a savings account and you will receive your account details. Then, sign the account paperwork to complete the account setup. After that, give the money to the clerk for deposit and you will receive a receipt. Finally, wait for the teller to run the deposit and you will receive a confirmation message.']","def wait_for_teller(input_1, input_2):
+    """"""
+    Simulates waiting for the teller to run the deposit and provides a confirmation message.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Confirmation message for the deposit.
+    """"""
+    return ""Deposit successful. Your new balance is $1500.00""
+"
+33,How to open up a convenience store,['Others'],"[""Search out convenience store's for sale."", 'Decide on desired store.', 'Speak with owner.', 'Decide on price.', 'Travel to bank.', 'Put in loan application.', 'Wait for loan approval.']","[['search_convenience_stores_for_sale', 'decide_on_desired_store', 'speak_with_owner', 'decide_on_price', 'travel_to_bank', 'put_in_loan_application', 'wait_for_loan_approval']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': ""Search out convenience store's for sale.""}, {'id': 'task_2', 'label': 'Decide on desired store.'}, {'id': 'task_3', 'label': 'Speak with owner.'}, {'id': 'task_4', 'label': 'Decide on price.'}, {'id': 'task_5', 'label': 'Travel to bank.'}, {'id': 'task_6', 'label': 'Put in loan application.'}, {'id': 'task_7', 'label': 'Wait for loan approval.'}], 'edges': [{'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_6', 'to': 'task_7'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To open up a convenience store, first search for convenience stores for sale in your desired location. Decide on the store you want to purchase based on your criteria. Speak with the owner to discuss details and negotiate the price. Travel to the bank to discuss loan options and submit a loan application. Wait for the loan approval to finalize the purchase.']","def wait_for_loan_approval(application_id, bank_name):
+    """"""
+    Simulates waiting for loan approval from the bank.
+
+    Args:
+        application_id (str): The ID of the loan application.
+        bank_name (str): The name of the bank.
+
+    Returns:
+        str: The status of the loan application.
+    """"""
+    loan_status = ""Loan approved""
+    return loan_status
+"
+34,How to make the bed,['Home and Garden'],"['decide to make the bed', 'walk to bedroom', 'walk over to the bed', 'take pillows off the bed', 'pick comforter up off the floor', 'put comforter on bed']","[['decide_to_make_the_bed', 'walk_to_bedroom', 'walk_over_to_the_bed', 'take_pillows_off_the_bed', 'pick_comforter_up_off_the_floor', 'put_comforter_on_bed']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'decide to make the bed'}, {'id': 'task_2', 'label': 'walk to bedroom'}, {'id': 'task_3', 'label': 'walk over to the bed'}, {'id': 'task_4', 'label': 'take pillows off the bed'}, {'id': 'task_5', 'label': 'pick comforter up off the floor'}, {'id': 'task_6', 'label': 'put comforter on bed'}], 'edges': [{'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To make the bed, first decide to make the bed. Then, walk to the bedroom and walk over to the bed. Take the pillows off the bed, pick the comforter up off the floor, and put the comforter on the bed.']","def put_comforter_on_bed(input_1, input_2):
+    """"""
+    Simulates the action of putting the comforter on the bed.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A statement indicating the action of putting the comforter on the bed.
+    """"""
+    return ""Action: Put comforter on the bed""
+"
+35,How to Convert an Improper Fraction to Percent,['Education and Communication'],"['Multiply the fraction by 100.', 'Divide the numerator by the denominator.', 'Add a percent sign.']","[['multiply_fraction_by_100', 'divide_numerator_by_denominator', 'add_percent_sign']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Multiply the fraction by 100.'}, {'id': 'task_2', 'label': 'Divide the numerator by the denominator.'}, {'id': 'task_3', 'label': 'Add a percent sign.'}], 'edges': [{'from': 'task_2', 'to': 'task_1'}, {'from': 'task_1', 'to': 'task_3'}]}}","['To convert an improper fraction to a percent, first multiply the fraction by 100, then add a percent sign to the result.']","def add_percent_sign(number):
+    """"""
+    Adds a percent sign to the given number.
+
+    Args:
+        number (str): The number to which a percent sign will be added.
+
+    Returns:
+        str: The number with a percent sign appended.
+    """"""
+    return f""{number}%""
+"
+36,How to Layer Cut Your Own Hair,['Others'],"['Divide your hair into sections.', 'Trim the front top box.', 'Trim the front right section.', 'Trim the front left section.', 'Trim the back sections.', 'Comb your hair out and examine your layers.']","[['divide_hair_into_sections', 'trim_front_top_box', 'trim_front_right_section', 'trim_front_left_section', 'trim_back_sections', 'comb_and_examine_layers']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Divide your hair into sections.'}, {'id': 'task_2', 'label': 'Trim the front top box.'}, {'id': 'task_3', 'label': 'Trim the front right section.'}, {'id': 'task_4', 'label': 'Trim the front left section.'}, {'id': 'task_5', 'label': 'Trim the back sections.'}, {'id': 'task_6', 'label': 'Comb your hair out and examine your layers.'}], 'edges': [{'from': 'task_4', 'to': 'task_6'}, {'from': 'task_1', 'to': 'task_4'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_1', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_5'}, {'from': 'task_2', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_6'}, {'from': 'task_5', 'to': 'task_6'}]}}","['To layer cut your own hair, start by dividing your hair into 4 sections: front top, front right, front left, and back. Trim each section by 1 inch, starting with the front top box, then the front right section, followed by the front left section, and finally the back sections. After trimming, comb your hair and examine the layers to ensure they are even and well-blended.']","def comb_and_examine_layers(input_1, input_2):
+    """"""
+    Detailed description of the what the function does
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Combed hair and examined layers. Layers are even and well-blended.""
+"
+37,How to Train Your First Falcon,['Education and Communication'],"['Use a lure that resembles the game you intend to hunt.', 'Start by wiggling the lure a short distance away from your bird.', 'Increase the chase distance gradually.', 'Stop baiting the lure once your bird chases it reliably.']","[['use_lure', 'wiggle_lure', 'increase_chase_distance', 'stop_baiting']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Use a lure that resembles the game you intend to hunt.'}, {'id': 'task_2', 'label': 'Start by wiggling the lure a short distance away from your bird.'}, {'id': 'task_3', 'label': 'Increase the chase distance gradually.'}, {'id': 'task_4', 'label': 'Stop baiting the lure once your bird chases it reliably.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To train your first falcon, start by using a lure that resembles a small rabbit. Wiggle the lure 5 feet away from the falcon. Gradually increase the chase distance to 10 feet. Stop baiting the lure once the falcon chases it reliably.']","def stop_baiting(input_1, input_2):
+    """"""
+    Mimics stopping the baiting of the lure once the bird chases it reliably.
+
+    Args:
+        input_1(str): Description of the bird.
+        input_2 (bool): Whether the bird is chasing reliably.
+
+    Returns:
+        str: A description of stopping the baiting.
+    """"""
+    return ""Stopping the baiting as the falcon chases reliably.""
+"
+38,How to Calculate Amount of Paint to Paint a Room,['Home and Garden'],"['Grab a paper, pencil, and a measuring tape.', 'Measure the height and length of each wall.', 'Multiply your heights and lengths to get the square footage, then convert to inches.', 'Add all of your square footages together to find the total.']","[['grab_tools', 'measure_walls', 'calculate_square_footage', 'total_square_footage']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Grab a paper, pencil, and a measuring tape.'}, {'id': 'task_2', 'label': 'Measure the height and length of each wall.'}, {'id': 'task_3', 'label': 'Multiply your heights and lengths to get the square footage, then convert to inches.'}, {'id': 'task_4', 'label': 'Add all of your square footages together to find the total.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To calculate the amount of paint needed to paint a room, first grab a paper, pencil, and a measuring tape. Measure the height and length of each wall. For example, you might get measurements like [(height: 8ft, length: 12ft), (height: 8ft, length: 15ft), (height: 8ft, length: 10ft), (height: 8ft, length: 14ft)]. Multiply the heights and lengths to get the square footage, then convert to inches, resulting in values like [1152, 1440, 960, 1344] inches. Finally, add all of your square footages together to find the total, which in this case is 4864 inches.']","def total_square_footage(input_1, input_2):
+    """"""
+    Mimics the addition of all square footages to find the total.
+
+    Args:
+        input_1 (str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A string representing the total square footage.
+    """"""
+    return ""Total square footage: 4864 inches"""
+39,How to Make Beard Oil,['Health'],"['Mix coconut oil and jojoba oil in a bottle.', 'Add sandalwood and supplemental essential oils to the base.', 'Stir the oils together in their container.']","[['mix_oils', 'add_essential_oils', 'stir_oils']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Mix coconut oil and jojoba oil in a bottle.'}, {'id': 'task_2', 'label': 'Add sandalwood and supplemental essential oils to the base.'}, {'id': 'task_3', 'label': 'Stir the oils together in their container.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}]}}","['To make beard oil, first mix coconut oil and jojoba oil in a bottle. Then, add sandalwood and supplemental essential oils to the base. Finally, stir the oils together in their container.']","def stir_oils(input_1, input_2):
+    """"""
+    Stirs the oils together in their container.
+
+    Args:
+        input_1 (str): The first input parameter, representing the type of container.
+        input_2 (bool): The second input parameter, indicating whether the container is sealed.
+
+    Returns:
+        str: A message indicating that the oils have been stirred together.
+    """"""
+    return ""The oils have been stirred together in their container.""
+"
+40,How to Build an Underground House,['Home and Garden'],"['Develop detailed structural plans.', 'Design your house.', 'Include an entrance and exit in your design.']","[['develop_detailed_structural_plans', 'design_your_house', 'include_entrance_and_exit']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Develop detailed structural plans.'}, {'id': 'task_2', 'label': 'Design your house.'}, {'id': 'task_3', 'label': 'Include an entrance and exit in your design.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_3', 'to': 'task_1'}]}}","['To build an underground house, start by developing detailed structural plans that include a reinforced concrete foundation with waterproofing, concrete block walls with insulation, a green roof, steel I-beams for support, and a mechanical ventilation system. Next, design your house layout with rooms such as a living room, kitchen, bedroom, and bathroom, ensuring a total area of around 1000 sq ft on a single floor. Finally, include entrance and exit points, such as a front door with reinforced steel and a back door with an emergency release.']","def include_entrance_and_exit(input_1, input_2):
+    """"""
+    Adds entrance and exit points to the house design.
+
+    Args:
+        input_1(str): Description of the house design.
+        input_2 (bool): Indicator if the design should include emergency exits.
+
+    Returns:
+        str: A JSON string containing the updated house design with entrance and exit points.
+    """"""
+    import json
+    entrances_exits = {
+        ""main_entrance"": ""Front door with reinforced steel"",
+        ""emergency_exit"": ""Back door with emergency release""
+    }
+    return json.dumps(entrances_exits, indent=4)
+"
+41,How to Clean a Sharpening Stone,['Home and Garden'],"['Coat your sharpening stone with a layer of WD-40.', 'Scour the surface gently with a piece of fine steel wool to remove grime.', 'Wipe the surface of your sharpening stone with a damp cloth or paper towel.']","[['coat_sharpening_stone', 'scour_surface', 'wipe_surface']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Coat your sharpening stone with a layer of WD-40.'}, {'id': 'task_2', 'label': 'Scour the surface gently with a piece of fine steel wool to remove grime.'}, {'id': 'task_3', 'label': 'Wipe the surface of your sharpening stone with a damp cloth or paper towel.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_3', 'to': 'task_1'}]}}","['To clean a sharpening stone, first coat it with a layer of WD-40. Then, scour the surface gently with a piece of fine steel wool to remove grime. Finally, wipe the surface with a damp cloth or paper towel.']","def wipe_surface(input_1, input_2):
+    """"""
+    Wipe the surface of your sharpening stone with a damp cloth or paper towel.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Surface wiped with a damp cloth or paper towel.""
+"
+42,How to Copy Someone's Handwriting,['Education and Communication'],"['Find a source document to trace.', 'Place the source document over a light source.', 'Trace over their writing.', 'Attempt to recreate the handwriting without a source document.']","[['find_source_document', 'place_document_over_light_source', 'trace_over_writing', 'recreate_handwriting_without_source']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Find a source document to trace.'}, {'id': 'task_2', 'label': 'Place the source document over a light source.'}, {'id': 'task_3', 'label': 'Trace over their writing.'}, {'id': 'task_4', 'label': 'Attempt to recreate the handwriting without a source document.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_3', 'to': 'task_4'}]}}","[""To copy someone's handwriting, first find a source document, then place it over a light source. Trace over the writing and attempt to recreate the handwriting without the source document.""]","def recreate_handwriting_without_source(input_1, input_2):
+    """"""
+    Detailed description of the what the function does
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: Detailed explanation of what the function returns.
+    """"""
+    return ""Handwriting recreated without source: 'Recreated Handwriting.png'""
+"
+43,How to Remove a Dent from a Stainless Steel Refrigerator,['Home and Garden'],"['Blow hot air.', 'Use dry ice.', 'Blow cold condensed air on it.']","[['blow_hot_air', 'use_dry_ice', 'blow_cold_condensed_air']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Blow hot air.'}, {'id': 'task_2', 'label': 'Use dry ice.'}, {'id': 'task_3', 'label': 'Blow cold condensed air on it.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_3', 'to': 'task_1'}]}}","['To remove a dent from a stainless steel refrigerator, you can follow these steps: First, blow hot air on the dent for about 5 minutes. Next, apply dry ice to the dent for around 3 minutes. Finally, blow cold condensed air on the dent for approximately 4 minutes. This combination of heating and cooling should help in contracting and expanding the metal, thereby removing the dent.']","def blow_cold_condensed_air(input_1, input_2):
+    """"""
+    Simulates the action of blowing cold condensed air, typically used for cooling or removing dents by contracting the metal.
+
+    Args:
+        input_1(str): Description of the target area or object.
+        input_2 (bool): Indicator of whether the process should be continuous or intermittent.
+
+    Returns:
+        str: A message indicating the completion of the cold air blowing process.
+    """"""
+    return ""Cold condensed air has been blown on the target area for 4 minutes.""
+"
+44,How to Eat Raw Broccoli,['Food and Entertainment'],"['Clean the head of broccoli with cold water.', 'Dry off the broccoli head with a paper towel.', 'Use a sharp knife to cut the florets from the main stem of the broccoli.']","[['clean_broccoli', 'dry_broccoli', 'cut_broccoli']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Clean the head of broccoli with cold water.'}, {'id': 'task_2', 'label': 'Dry off the broccoli head with a paper towel.'}, {'id': 'task_3', 'label': 'Use a sharp knife to cut the florets from the main stem of the broccoli.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}]}}","['To eat raw broccoli, first clean the head of broccoli with cold water. Then, dry off the broccoli head with a paper towel. Finally, use a sharp knife to cut the florets from the main stem of the broccoli.']","def cut_broccoli(input_1, input_2):
+    """"""
+    Simulates using a sharp knife to cut the florets from the main stem of the broccoli.
+
+    Args:
+        input_1(str): Description of the broccoli head to be cut.
+        input_2 (bool): Indicator if a sharp knife is used.
+
+    Returns:
+        str: Confirmation message that the broccoli florets have been cut from the main stem.
+    """"""
+    return ""The broccoli florets have been cut from the main stem with a sharp knife.""
+"
+45,How to build a computer since buying one was expensive,['Education and Communication'],"['Buy the various computer parts', 'Get the instructions', 'Read the instructions carefully', 'Put each part in piece by piece', 'Check that everything is in the right place', 'Test out the computer', 'Use the computer happily']","[['buy_computer_parts', 'get_instructions', 'read_instructions', 'assemble_parts', 'check_assembly', 'test_computer', 'use_computer']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Buy the various computer parts'}, {'id': 'task_2', 'label': 'Get the instructions'}, {'id': 'task_3', 'label': 'Read the instructions carefully'}, {'id': 'task_4', 'label': 'Put each part in piece by piece'}, {'id': 'task_5', 'label': 'Check that everything is in the right place'}, {'id': 'task_6', 'label': 'Test out the computer'}, {'id': 'task_7', 'label': 'Use the computer happily'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_6', 'to': 'task_7'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To build a computer, first, buy the necessary parts such as CPU, GPU, motherboard, RAM, storage, power supply, and case. Next, follow the step-by-step instructions to assemble the parts. Carefully read the instructions and assemble the parts piece by piece. Check that all parts are in the right place, then test the computer to ensure it works. Finally, enjoy using your newly built computer.']","def use_computer(input_1, input_2):
+    """"""
+    Simulates using the computer happily after successful assembly and testing.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A message indicating that the computer is being used happily.
+    """"""
+    return ""The computer is being used happily.""
+"
+46,How to Fix Your Credit,['Others'],"['Get a copy of all three credit reports.', 'Compare your credit report with your own records.', 'Write a letter to the appropriate credit bureau disputing any errors.', 'Mail your letter and supporting documentation to the credit bureau.', 'Follow up to make sure the error is corrected.']","[['get_credit_reports', 'compare_credit_reports', 'write_dispute_letter', 'mail_dispute_letter', 'follow_up_dispute']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Get a copy of all three credit reports.'}, {'id': 'task_2', 'label': 'Compare your credit report with your own records.'}, {'id': 'task_3', 'label': 'Write a letter to the appropriate credit bureau disputing any errors.'}, {'id': 'task_4', 'label': 'Mail your letter and supporting documentation to the credit bureau.'}, {'id': 'task_5', 'label': 'Follow up to make sure the error is corrected.'}], 'edges': [{'from': 'task_4', 'to': 'task_5'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To fix your credit, first retrieve copies of your credit reports from Experian, Equifax, and TransUnion. Compare these reports with your own records to identify any discrepancies. Write a dispute letter to the appropriate credit bureau, detailing the errors. Mail the letter along with supporting documentation. Finally, follow up to ensure the errors are corrected.']","def follow_up_dispute(input_1, input_2):
+    """"""
+    Follow up with the credit bureau to ensure the error is corrected.
+
+    Args:
+        input_1(str): Placeholder for the first input parameter.
+        input_2 (bool): Placeholder for the second input parameter.
+
+    Returns:
+        str: Status update on the dispute resolution process.
+    """"""
+    return ""Follow-up completed. The credit bureau has corrected the errors in your credit report.""
+"
+47,How to Get Lice Off Clothes,['Health'],"['Gather the clothes.', 'Machine wash your clothes.', 'Take the clothes to the dry cleaners.']","[['gather_clothes', 'machine_wash_clothes', 'take_clothes_to_dry_cleaners']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Gather the clothes.'}, {'id': 'task_2', 'label': 'Machine wash your clothes.'}, {'id': 'task_3', 'label': 'Take the clothes to the dry cleaners.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}]}}","['To get lice off clothes, first gather the clothes. Then, machine wash your clothes using hot water. For delicate items, take the clothes to the dry cleaners.']","def take_clothes_to_dry_cleaners(input_1, input_2):
+    """"""
+    Simulates taking clothes to the dry cleaners.
+
+    Args:
+        input_1(str): Description of the clothes to be dry cleaned.
+        input_2 (bool): Indicator if the clothes are ready to be taken to the dry cleaners.
+
+    Returns:
+        str: A message indicating the clothes have been taken to the dry cleaners.
+    """"""
+    return ""Clothes have been taken to the dry cleaners and will be ready for pickup soon.""
+"
+48,How to Weave on a Loom,['Others'],"['Select a warping thread.', 'Begin the warp.', 'Continue looping the thread or yarn.', 'Complete the warp.']","[['select_warping_thread', 'begin_warp', 'continue_looping_thread', 'complete_warp']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'Select a warping thread.'}, {'id': 'task_2', 'label': 'Begin the warp.'}, {'id': 'task_3', 'label': 'Continue looping the thread or yarn.'}, {'id': 'task_4', 'label': 'Complete the warp.'}], 'edges': [{'from': 'task_2', 'to': 'task_3'}, {'from': 'task_1', 'to': 'task_2'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To weave on a loom, start by selecting a warping thread. Next, begin the warp by setting up 200 threads, each 10 yards long, and evenly spaced. Continue looping the thread by threading through heddles and reed while maintaining tension. Finally, complete the warp by securing all threads, making the loom ready for weaving.']","def complete_warp(input_1, input_2):
+    """"""
+    Simulates the completion of the warp process on a loom.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: A string representing the completed warp setup.
+    """"""
+    return ""Warp completed: All threads secured, ready for weaving""
+"
+49,How to buy a bicycle,['Others'],"['turn on computer', 'open web browser', 'go to Craigslist or similar preferred site', 'search for bicycles', 'choose a bike and email seller', 'meet with seller', 'negotiate a price for bicycle']","[['turn_on_computer', 'open_web_browser', 'go_to_website', 'search_for_bicycles', 'choose_bike_and_email_seller', 'meet_with_seller', 'negotiate_price']]","{'task_graph': {'nodes': [{'id': 'task_1', 'label': 'turn on computer'}, {'id': 'task_2', 'label': 'open web browser'}, {'id': 'task_3', 'label': 'go to Craigslist or similar preferred site'}, {'id': 'task_4', 'label': 'search for bicycles'}, {'id': 'task_5', 'label': 'choose a bike and email seller'}, {'id': 'task_6', 'label': 'meet with seller'}, {'id': 'task_7', 'label': 'negotiate a price for bicycle'}], 'edges': [{'from': 'task_1', 'to': 'task_2'}, {'from': 'task_2', 'to': 'task_3'}, {'from': 'task_6', 'to': 'task_7'}, {'from': 'task_4', 'to': 'task_5'}, {'from': 'task_5', 'to': 'task_6'}, {'from': 'task_3', 'to': 'task_4'}]}}","['To buy a bicycle, first turn on your computer. Then, open a web browser and go to Craigslist or a similar site. Search for bicycles and choose one that you like. Email the seller to express your interest. Arrange a meeting with the seller and negotiate the price. For example, you might find a Mountain Bike listed for $200 in Downtown, email the seller, meet them, and negotiate the price down to $180.']","def negotiate_price(input_1, input_2):
+    """"""
+    Simulates negotiating the price for the bicycle.
+
+    Args:
+        input_1(str): Detailed description of the first input parameter.
+        input_2 (bool): Detailed description of the second input parameter.
+
+    Returns:
+        str: The final negotiated price for the bicycle.
+    """"""
+    return ""Final price for the Mountain Bike is $180.""
+"
