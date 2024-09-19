@@ -153,4 +153,5 @@ Given the following list of tools, create the minimum number of functions requir
 
 
 if __name__ == "__main__":
-    generate_functions_from_tool_list()
+    generate_functions_from_tool_list(source_df="../asynchow_dataset/asynchow_seq_df.csv")
+    generate_functions_from_tool_list(source_df = "../asynchow_dataset/asynchow_para_df.csv")
