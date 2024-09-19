@@ -3,11 +3,13 @@
 
 ## Overview
 
-This repository hosts the **AsyncHow Agentic Systems Evaluation Dataset**, a comprehensive dataset created to evaluate the performance of agentic systems driven by Large Language Models (LLMs). This dataset is designed to assess dynamic task decomposition, tool selection, and task execution across various domains, enabling researchers to analyze agentic systems' behavior with both simple and complex tasks.
-
+This repository hosts the **AsyncHow Agentic Systems Evaluation Dataset**, a comprehensive dataset created to evaluate the performance of agentic systems driven by Large Language Models (LLMs). 
+The dataset is based on the work of Lin et al. and can be found on their github (https://github.com/fangru-lin/graph-llm-asynchow-plan).
+This dataset is designed to assess dynamic task decomposition, tool selection, and task execution across various domains, enabling researchers to analyze agentic systems' behavior with both simple and complex tasks.
 The dataset is foundational to our NeurIPS 2024 paper titled _Advancing Agentic Systems: Dynamic Task Decomposition, Tool Integration, and Evaluation using Novel Metrics and Dataset_. It was developed as part of our framework for evaluating agentic systems, which leverages novel metrics such as Node F1 Score, Structural Similarity Index (SSI), and Tool F1 Score.
 
 Additionally, the dataset includes **synthetic Python functions** generated using LLMs, which mimic real-world tool behavior, as well as realistic task graphs and gold-standard responses.
+
 
 ## Dataset Composition
 
@@ -19,6 +21,32 @@ The dataset is based on the **AsyncHow** dataset and has been extended to incorp
 3. **Expected Tool Call Sequences**: The ideal sequence in which tools should be called for successful task completion.
 4. **Gold Standard Responses**: Benchmark outputs that represent the correct results for each task graph scenario.
 5. **Complexity Categories**: Classification of task scenarios based on their structural complexity, such as linear workflows versus intricate interdependent tasks.
+
+## Before you get going
+It is important to understand that we have adapted the AsyncHow graph data to the specific format we are using within our agentic system. 
+We are using the following task graph structure currently:
+
+        {
+            "task_graph": {
+                "nodes": [
+                    {"id": "task_A", "label": "Task Description"},
+                    {"id": "task_B", "label": "Task Description"},
+                    {"id": "task_C", "label": "Task Description"},
+                    {"id": "task_D", "label": "Task Description"}
+                ],
+                "edges": [
+                    {"from": "task_A", "to": "task_B"},
+                    {"from": "task_B", "to": "task_C"},
+                    {"from": "task_B", "to": "task_D"},
+                    {"from": "task_C", "to": "task_D"}
+                ]
+            }
+        }
+
+The structure we use is can be used for representing  parallel/sequential and asynchronous graph structures.
+That means that all the functions in `transform_async_benchmark_data.py` are adapted to transform the graph structure from 
+the AsyncHow dataset into the structure above
+
 
 ## Code for Dataset Generation
 
@@ -106,5 +134,15 @@ If you use this dataset in your research, please cite our NeurIPS 2024 paper:
   author={Anonymous},
   booktitle={38th Conference on Neural Information Processing Systems (NeurIPS 2024)},
   year={2024}
+}
+```
+
+# Reference
+
+```bibtex
+@inproceedings{lingraph,
+  title={Graph-enhanced Large Language Models in Asynchronous Plan Reasoning},
+  author={Lin, Fangru and La Malfa, Emanuele and Hofmann, Valentin and Yang, Elle Michelle and Cohn, Anthony G and Pierrehumbert, Janet B},
+  booktitle={Forty-first International Conference on Machine Learning}
 }
 ```
