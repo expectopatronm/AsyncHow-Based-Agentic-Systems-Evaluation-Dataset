@@ -111,6 +111,7 @@ Given the following list of tools, create the minimum number of functions requir
     user_queries = eval_df["Scenario Name"].to_list()
     task_graphs = eval_df["Task Graphs"].to_list()
 
+    #Replace that with your own LLM (preferrably GPT-4o)
     my_gpt_client = GPT4oAzureClientManager()
 
     expected_tools = []
