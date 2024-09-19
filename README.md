@@ -1,6 +1,8 @@
 
 # AsyncHow Agentic Systems Evaluation Dataset
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13799791.svg)](https://doi.org/10.5281/zenodo.13799791)
+
 ## Overview
 
 This repository hosts the **AsyncHow Agentic Systems Evaluation Dataset**, a comprehensive dataset created to evaluate the performance of agentic systems driven by Large Language Models (LLMs). 
