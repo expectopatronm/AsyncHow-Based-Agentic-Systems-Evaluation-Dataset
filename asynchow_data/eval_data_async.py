@@ -1,4 +1,5 @@
 import pandas as pd
+import random
 
 
 def create_parallel_graph(edges, tools):
@@ -54,10 +55,10 @@ def create_seq_task_graph(edges, node_descriptions):
     return {'task_graph': {'nodes': node_list, 'edges': edge_list}}
 
 
-import random
-def create_seq_graphs(df_name):
 
-    df = pd.read_pickle("asynchow_data/seq_benchmark.pkl")
+def create_seq_graphs(target_df_name):
+
+    df = pd.read_pickle("seq_benchmark.pkl")
 
     # Specify the number of random samples you want to select
     num_samples = 100
@@ -94,12 +95,12 @@ def create_seq_graphs(df_name):
     }
 
     new_metrics_df = pd.DataFrame(metrics)
-    new_metrics_df.to_csv(df_name)
+    new_metrics_df.to_csv(target_df_name)
 
 
 def create_parallel_graphs(df_name):
 
-    df = pd.read_pickle("asynchow_data/para_benchmark.pkl")
+    df = pd.read_pickle("para_benchmark.pkl")
 
     # Specify the number of random samples you want to select
     num_samples = 100
@@ -174,7 +175,7 @@ def create_async_graph(edges, node_descriptions):
 
 def create_async_graphs(df_name):
 
-    df = pd.read_pickle("asynchow_data/async_benchmark.pkl")
+    df = pd.read_pickle("async_benchmark.pkl")
 
     # Specify the number of random samples you want to select
     num_samples = 100
@@ -214,6 +215,5 @@ def create_async_graphs(df_name):
     new_metrics_df.to_csv(df_name)
 
 if __name__ == "__main__":
-    #create_seq_graphs(df_name="asynchow_seq_df.csv")
-    create_parallel_graphs(df_name="asynchow_para_df.csv")
-    #create_async_graphs(df_name="asynchow_async_df.csv")
+    create_seq_graphs(target_df_name="asynchow_seq_df.csv")
+    #create_parallel_graphs(df_name="asynchow_para_df.csv")

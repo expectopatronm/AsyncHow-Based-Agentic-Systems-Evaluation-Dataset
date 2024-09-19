@@ -53,7 +53,7 @@ def repair_json(response):
     return response
 
 
-def generate_functions_from_tool_list():
+def generate_functions_from_tool_list(source_df = "../asynchow_dataset/asynchow_para_df.csv"):
     prompt = """ 
     I am designing an evaluation dataset for an agentic system based on one or more Large Language Models (LLMs). 
 Your task is to create Python functions that mimic potential tools in an agentic system. Create only a single function for each item in a list of tool descriptions and base the signature and function body only on the description.
@@ -105,9 +105,7 @@ Given the following list of tools, create the minimum number of functions requir
 - Only output the JSON with the three keys! This JSON will be automatically parsed, so ensure the format is precise.
 """
 
-#    eval_df = pd.read_csv("../asynchow_dataset/asynchow_seq_df.csv")
-    eval_df = pd.read_csv("../asynchow_dataset/asynchow_para_df.csv")
-    #tool_folder = "tools_seq_50"
+    eval_df = pd.read_csv(source_df)
     tool_folder = "tools_para_50"
     target_df = "eval_data_para_df_50.csv"
 
@@ -155,11 +153,4 @@ Given the following list of tools, create the minimum number of functions requir
 
 
 if __name__ == "__main__":
-    #generate_functions_from_tool_list()
-
-    eval_df = pd.read_csv("../asynchow_dataset/asynchow_para_df.csv")
-    task_graphs = eval_df["Task Graphs"].to_list()
-
-    target_df = pd.read_csv("eval_data_para_df_50.csv")
-    target_df["Task Graphs"] = task_graphs
-    #target_df.to_csv("eval_data_para_df_50.csv")
+    generate_functions_from_tool_list()
