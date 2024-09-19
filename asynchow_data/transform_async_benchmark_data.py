@@ -22,6 +22,7 @@ def create_parallel_graph(edges, tools):
 def create_seq_task_graph(edges, node_descriptions):
     """
     Creates a task graph from a list of edges and node descriptions, removing 'Start' and 'End' nodes.
+    This method transforms the AsyncHow graph into the format we use.
 
     Args:
         edges (list of tuples): List of edges where each edge is a tuple (from_node, to_node).
@@ -216,4 +217,4 @@ def create_async_graphs(df_name):
 
 if __name__ == "__main__":
     create_seq_graphs(target_df_name="asynchow_seq_df.csv")
-    #create_parallel_graphs(df_name="asynchow_para_df.csv")
+    create_parallel_graphs(target_df_name="asynchow_para_df.csv")
