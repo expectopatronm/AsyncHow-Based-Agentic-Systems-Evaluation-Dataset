@@ -110,9 +110,9 @@ You find the implementation of all the metrics in `metric_utils.py`.
    cd AsyncHow-Agentic-Systems-Evaluation
    ```
 
-2. **Task Graphs**: Each task graph is provided in JSON format and can be loaded and processed using standard graph libraries such as NetworkX.
+2. **Task Graphs**: Adapt the transformation accordingly to the task graph format you are using
 3. **Tool Functions**: Python scripts are provided for each scenario, replicating the synthetic tool functions. These can be executed and integrated into agentic systems for testing.
-4. **Evaluation**: Use the provided evaluation scripts to assess your agentic system’s performance based on the aforementioned metrics.
+4. **Evaluation**: Use the provided metric scripts together with the data you obtained from you agentic system.
 
 ## License
 
