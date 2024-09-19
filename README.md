@@ -4,7 +4,7 @@
 ## Overview
 
 This repository hosts the **AsyncHow Agentic Systems Evaluation Dataset**, a comprehensive dataset created to evaluate the performance of agentic systems driven by Large Language Models (LLMs). 
-The dataset is based on the work of Lin et al.[@lin2024graph] and can be found on their github (https://github.com/fangru-lin/graph-llm-asynchow-plan).
+The dataset is based on the work of Lin et al. [Graph-enhanced Large Language Models in Asynchronous Plan Reasoning] (https://github.com/fangru-lin/graph-llm-asynchow-plan).
 This dataset is designed to assess dynamic task decomposition, tool selection, and task execution across various domains, enabling researchers to analyze agentic systems' behavior with both simple and complex tasks.
 The dataset is foundational to our NeurIPS 2024 paper titled _Advancing Agentic Systems: Dynamic Task Decomposition, Tool Integration, and Evaluation using Novel Metrics and Dataset_. It was developed as part of our framework for evaluating agentic systems, which leverages novel metrics such as Node F1 Score, Structural Similarity Index (SSI), and Tool F1 Score.
 
@@ -21,6 +21,15 @@ The dataset is based on the **AsyncHow** dataset and has been extended to incorp
 3. **Expected Tool Call Sequences**: The ideal sequence in which tools should be called for successful task completion.
 4. **Gold Standard Responses**: Benchmark outputs that represent the correct results for each task graph scenario.
 5. **Complexity Categories**: Classification of task scenarios based on their structural complexity, such as linear workflows versus intricate interdependent tasks.
+
+## Important assumptions we make
+In order to use the dataset you will have to ensure that your agentic architecture allows you to retrieve the following data for each query:
+1. **Task Graphs**: For each Task graph in the dataset you will have to obtain the task graph your system is producing
+2. **List of tools**: For each query you will have to obtain the list of tools your agent is proposing
+3. **Generated answer**: For each query, task graph and list of tools you will need to obtain the generated answer
+4. **Tools**: You will have to ensure that your agent is using the tools that the were generated in `generate_functions.py`  the folders `tools_seq_50` and `tools_para_50`   
+In the final step you will have to implement an evaluation function that loops through either `eval_data_para_df_50.csv` and `eval_data_seq_df_50.csv`, retrieves the data above
+and merges the data into a `csv` or `pkl`.
 
 ## Before you get going
 It is important to understand that we have adapted the AsyncHow graph data to the specific format we are using within our agentic system. 
@@ -45,33 +54,17 @@ We are using the following task graph structure currently:
 
 The structure we use is can be used for representing  parallel/sequential and asynchronous graph structures.
 That means that all the functions in `transform_async_benchmark_data.py` are adapted to transform the graph structure from 
-the AsyncHow dataset into the structure above
-
+the AsyncHow dataset into the structure above. In order to use our dataset you will have to adapt the transformation functions
+in `transform_async_benchmark_data.py` according to the graph structure you use in your agentic system. This task graphs
+will be the baseline against which your agentic task graphs will be compared.
 
 ## Code for Dataset Generation
 
 The dataset was generated using a Python script that leverages a GPT-based client to generate synthetic tool functions. These functions mimic real-world APIs, databases, or other tools that an agentic system may interact with. The steps involved in dataset creation include:
-
-- **Removing Semantic Duplicates**: The dataset generation process includes a method to remove semantically similar duplicate entries using a pre-trained model (`all-MiniLM-L6-v2` from Sentence Transformers).
 - **Tool Function Generation**: The `generate_functions` method creates Python functions based on tool descriptions and outputs them into the appropriate directories.
 - **GPT-4 Function Creation**: A prompt is fed to the GPT-4 model, which generates Python functions and outputs based on provided tool descriptions. This approach ensures realistic, context-appropriate synthetic data generation.
 
 ### Key Code Snippets:
-
-#### Remove Semantic Duplicates
-```python
-from sentence_transformers import SentenceTransformer, util
-
-def remove_semantic_duplicates(folder_path, similarity_threshold=0.8):
-    model = SentenceTransformer('all-MiniLM-L6-v2')
-    subfolder_names = [name for name in os.listdir(folder_path) if os.path.isdir(os.path.join(folder_path, name))]
-    embeddings = model.encode(subfolder_names, convert_to_tensor=True)
-    unique_subfolders = []
-    for i, name in enumerate(subfolder_names):
-        if not any(util.cos_sim(embeddings[i], embeddings[j]) > similarity_threshold for j in range(i)):
-            unique_subfolders.append(name)
-    return unique_subfolders
-```
 
 #### Generate Tool Functions
 ```python
@@ -107,6 +100,7 @@ Our dataset is paired with a set of evaluation metrics designed to assess the pe
 - **Structural Similarity Index (SSI)**: Quantifies the overall fidelity of task graphs, capturing both node and edge similarities to ensure logical structure is preserved.
 - **Node Label Similarity**: Measures the semantic similarity of nodes between the actual and expected task graphs using cosine similarity.
 - **Graph Edit Distance (GED)**: A metric used to calculate the number of edits required to transform one graph into another.
+You find the implementation of all the metrics in `metric_utils.py`.
 
 ## How to Use the Dataset
 
@@ -137,12 +131,6 @@ If you use this dataset in your research, please cite our NeurIPS 2024 paper:
 }
 ```
 
-# Reference
+## Reference
 
-```bibtex
-@inproceedings{lingraph,
-  title={Graph-enhanced Large Language Models in Asynchronous Plan Reasoning},
-  author={Lin, Fangru and La Malfa, Emanuele and Hofmann, Valentin and Yang, Elle Michelle and Cohn, Anthony G and Pierrehumbert, Janet B},
-  booktitle={Forty-first International Conference on Machine Learning}
-}
-```
+1. Lin, Fangru, La Malfa, Emanuele, Hofmann, Valentin, Yang, Elle Michelle, Cohn, Anthony G, and Pierrehumbert, Janet B. *Graph-enhanced Large Language Models in Asynchronous Plan Reasoning*. In Proceedings of the Forty-first International Conference on Machine Learning.
