@@ -1,0 +1,20 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Dataset",
+  "name": "AsyncHow-Based-Agentic-Systems-Evaluation-Dataset",
+  "description": "This dataset is used for evaluating agentic systems based on asynchronous task graphs and dynamic task decomposition.",
+  "url": "https://github.com/expectopatronm/AsyncHow-Based-Agentic-Systems-Evaluation-Dataset",
+  "sameAs": "https://doi.org/10.5281/zenodo.13799791",
+  "creator": {
+    "@type": "Organization",
+    "name": "Your Organization Name or Your Name"
+  },
+  "datePublished": "2024-09-19",
+  "keywords": "agentic systems, task graphs, dataset, async systems evaluation",
+  "license": "https://opensource.org/licenses/MIT",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "https://doi.org/10.5281/zenodo.13799791"
+  }
+}
