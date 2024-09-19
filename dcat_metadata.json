@@ -1,0 +1,19 @@
+{
+  "@context": "http://www.w3.org/ns/dcat#",
+  "@type": "Dataset",
+  "title": "AsyncHow-Based-Agentic-Systems-Evaluation-Dataset",
+  "description": "Dataset for evaluating agentic systems with task graphs.",
+  "identifier": "https://doi.org/10.5281/zenodo.13799791",
+  "creator": {
+    "@type": "Organization",
+    "name": "Your Organization or Name"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "downloadURL": "https://github.com/expectopatronm/AsyncHow-Based-Agentic-Systems-Evaluation-Dataset",
+    "mediaType": "application/zip"
+  },
+  "license": "https://opensource.org/licenses/MIT",
+  "issued": "2024-09-19",
+  "keyword": ["agentic systems", "task graphs", "dataset"]
+}
