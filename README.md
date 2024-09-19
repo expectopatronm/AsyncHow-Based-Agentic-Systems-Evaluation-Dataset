@@ -4,7 +4,7 @@
 ## Overview
 
 This repository hosts the **AsyncHow Agentic Systems Evaluation Dataset**, a comprehensive dataset created to evaluate the performance of agentic systems driven by Large Language Models (LLMs). 
-The dataset is based on the work of Lin et al. and can be found on their github (https://github.com/fangru-lin/graph-llm-asynchow-plan).
+The dataset is based on the work of Lin et al.[@lin2024graph] and can be found on their github (https://github.com/fangru-lin/graph-llm-asynchow-plan).
 This dataset is designed to assess dynamic task decomposition, tool selection, and task execution across various domains, enabling researchers to analyze agentic systems' behavior with both simple and complex tasks.
 The dataset is foundational to our NeurIPS 2024 paper titled _Advancing Agentic Systems: Dynamic Task Decomposition, Tool Integration, and Evaluation using Novel Metrics and Dataset_. It was developed as part of our framework for evaluating agentic systems, which leverages novel metrics such as Node F1 Score, Structural Similarity Index (SSI), and Tool F1 Score.
 
